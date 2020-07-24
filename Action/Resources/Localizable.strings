@@ -1,0 +1,79 @@
+// MARK: Challenge details
+"challenge_snooze_button" = "Ik ga het later doen";
+"challenge_done_button" = "Ik heb het gedaan";
+
+// MARK: Challenges available
+"challenge_duration_postfix" = "min";
+"challenge_participants_postfix" = "pers";
+"challenge_points_postfix" = "xp";
+"primary_instruction_text_highlighted" = "Trek ";
+"primary_instruction_text_postfix" = "een kaart";
+"secondary_instruction_text_highlighted" = "Draai ";
+"secondary_instruction_text_postfix" = "de kaart om deze challenge te starten";
+
+// MARK: Challenge finished
+"challenge_finished_title_highlight" = "Goed hoor! ";
+"challenge_finished_title_postfix" = "Nu weer door knallen!";
+"challenge_finished_text_highlight" = "Yes! ";
+"challenge_finished_text_postfix" = "Je hebt een kaart weggespeeld!!!";
+"challenge_reflection_button" = "Ga verder";
+
+// MARK: Challenge program
+"challenge_start_text_prefix" = "Zullen we de ";
+"challenge_start_text_highlight" = "challenge ";
+"challenge_start_text_postfix" = "starten?";
+"challenge_active_text_prefix" = "Wil je de ";
+"challenge_active_text_highlight" = "challenge ";
+"challenge_active_text_postfix" = "hervatten?";
+"challenge_review_text_prefix" = "Wil je de ";
+"challenge_review_text_highlight" = "challenge ";
+"challenge_review_text_postfix" = "beoordelen?";
+"challenge_finished_text_prefix" = "Challenge is ";
+"challenge_finished_text_highlight_postfix" = "afgerond";
+"quiz_text_prefix" = "Of wil je liever ";
+"quiz_text_highlight" = "quizzen?";
+
+// MARK: Challenge program more info
+"challenge_program_info_button" = "Lees meer hierover";
+
+// MARK: Challenge reflection
+"challenge_reflection_header" = "Reflectie";
+"challenge_reflection_title" = "Wat vond je van de challenge";
+"challenge_reflection_points" = "1xp";
+"challenge_reflection_submit_button" = "Reflectie opslaan";
+"challenge_reflection_cancel_button" = "Annuleren";
+
+// MARK: Onboarding
+"step_0_text_highlight" = "Welkom! ";
+"step_0_text_postfix" = "Trek één van de kaarten om te beginnen!";
+"step_1_text_highlight" = "Top! ";
+"step_1_text_postfix" = "Draai de kaart voor meer informatie.";
+"step_2_text_highlight" = "Swipe ";
+"step_2_text_postfix" = "de kaart weg als je klaar bent.";
+"card_0_title_prefix" = "Hey! Welkom bij ";
+"card_0_title_highlight" = "GoodHabitz.";
+"card_0_text" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+"card_1_title_prefix" = "Elke dag nieuwe ";
+"card_1_title_highlight" = "challenges";
+"card_1_text" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ";
+"card_2_title_prefix" = "Extra vragen in een ";
+"card_2_title_highlight" = "quiz";
+"card_2_text" = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ";
+
+// MARK: Login
+"example_card_text_1" = "Introductie";
+"example_card_text_2" = "Spelregels";
+"text_onboarding_followup_highlighted" = "That's it! ";
+"text_onboarding_followup_postfix" = "Dat was alles wat je moest weten. Heel veel succes!";
+"text_highlighted" = "Welkom terug ";
+"text_postfix" = "bij de GoodHabitz Challenge app.";
+"login_button" = "Ga verder naar inloggen";
+"camera_grant_access_title" = "Toegang tot camera";
+"camera_grant_access_text" = "Om in te loggen, moet je een QR code scannen. Hiervoor heeft de app toegang tot je camera nodig. Wil je toegang geven?";
+"camera_grant_access_yes_button" = "Ja";
+"camera_grant_access_no_button" = "Nee";
+
+// MARK: Quiz
+"quiz_submit_button" = "Verder";
+"quiz_next_button" = "Volgende vraag";
+"quiz_more_info_button" = "Lees meer hierover";

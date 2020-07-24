@@ -1,0 +1,226 @@
+{
+    "keywordList": [
+        {
+            "key": "card_text_1",
+            "value": "Introductie"
+        },
+        {
+            "key": "card_text_2",
+            "value": "Wie ben jij?"
+        },
+        {
+            "key": "card_text_3",
+            "value": "Spelregels"
+        },
+        {
+            "key": "challenge_duration_postfix",
+            "value": "min"
+        },
+        {
+            "key": "challenge_finished_text_highlight",
+            "value": "afgerond"
+        },
+        {
+            "key": "challenge_finished_text_prefix",
+            "value": "Challenge is"
+        },
+        {
+            "key": "challenge_participants_postfix",
+            "value": "pers"
+        },
+        {
+            "key": "challenge_points_postfix",
+            "value": "xp"
+        },
+        {
+            "key": "challenge_start_text_highlight",
+            "value": "challenge"
+        },
+        {
+            "key": "challenge_start_text_postfix",
+            "value": "starten?"
+        },
+        {
+            "key": "challenge_start_text_prefix",
+            "value": "Zullen we de"
+        },
+        {
+            "key": "error_NoInternet_Body",
+            "value": "Controleer je netwerkverbinding of maak opnieuw verbinding met de wifi."
+        },
+        {
+            "key": "error_NoInternet_ButtonAgain",
+            "value": "Probeer het nogmaals"
+        },
+        {
+            "key": "error_NoInternet_ButtonSettings",
+            "value": "Instellingen"
+        },
+        {
+            "key": "error_NoInternet_Header",
+            "value": "GEEN INTERNETVERBINDING"
+        },
+        {
+            "key": "example_card_text_1",
+            "value": "Introductie"
+        },
+        {
+            "key": "example_card_text_2",
+            "value": "Spelregels"
+        },
+        {
+            "key": "login_button",
+            "value": "Let's do this!"
+        },
+        {
+            "key": "next",
+            "value": "Next"
+        },
+        {
+            "key": "primary_instruction_text_highlighted",
+            "value": "Trek "
+        },
+        {
+            "key": "primary_instruction_text_postfix",
+            "value": "een kaart"
+        },
+        {
+            "key": "quiz_text_highlight",
+            "value": "quizzen?"
+        },
+        {
+            "key": "quiz_text_prefix",
+            "value": "Of wil je liever"
+        },
+        {
+            "key": "secondary_instruction_text_highlighted",
+            "value": "Draai "
+        },
+        {
+            "key": "secondary_instruction_text_postfix",
+            "value": "de kaart om deze challenge te starten"
+        },
+        {
+            "key": "step_1_text_highlight",
+            "value": "Welkom! "
+        },
+        {
+            "key": "step_1_text_postfix",
+            "value": "Trek één van de kaarten om te beginnen!"
+        },
+        {
+            "key": "step_2_text_highlight",
+            "value": "Top! "
+        },
+        {
+            "key": "step_2_text_postfix",
+            "value": "Draai de kaart voor meer informatie."
+        },
+        {
+            "key": "text_highlighted",
+            "value": "That's it!"
+        },
+        {
+            "key": "text_postfix",
+            "value": "Dat was alles wat je moest weten. Heel veel succes!"
+        }
+    ],
+    "reflectionQuestionList": [
+        {
+            "id": 1,
+            "questionTxtCommon": "Het was moeilijk",
+            "questionTxtMin": "helemaal mee eens",
+            "questionTxtMax": "helemaal mee oneens"
+        },
+        {
+            "id": 2,
+            "questionTxtCommon": "Het was leuk!",
+            "questionTxtMin": "helemaal mee eens",
+            "questionTxtMax": "helemaal mee oneens"
+        },
+        {
+            "id": 3,
+            "questionTxtCommon": "Ik heb het eerlijk gedaan",
+            "questionTxtMin": "helemaal mee eens",
+            "questionTxtMax": "helemaal mee oneens"
+        }
+    ],
+    "personProfile": {
+        "Id": 1234992,
+        "CompanyId": 1003112,
+        "CompanyTypeId": 5,
+        "FullName": null,
+        "FirstName": "Test106",
+        "MidName": "",
+        "LastName": "User106",
+        "Email": "test106@goodhabitz.com",
+        "LanguagePreference": "nl-nl",
+        "CompanyName": "Test customer UK",
+        "StatusId": 3,
+        "CreateDate": "2019-02-07T22:51:29.26"
+    },
+    "cardDeckList": [
+        {
+            "id": 0,
+            "courseId": 17706,
+            "name": "[Open] Vergeet je brein niet",
+            "backgroundColor": "#DA014E",
+            "imageUrl": "https://sandbox.goodhabitz.com/ghcc_media/0145-85tm2.png",
+            "description": "test description",
+            "trainingUrl": "https://acceptatie.goodhabitz.com/nl-nl/online-course/22684/vergeet-je-brein-niet.html",
+            "quizCardList": null,
+            "dailyChallengeList": null,
+            "status": "live"
+        },
+        {
+            "id": 1,
+            "courseId": 17706,
+            "name": "[Active] Grip op je leven",
+            "backgroundColor": "#FAC541",
+            "imageUrl": "https://sandbox.goodhabitz.com/ghcc_media/0083-s5hjl.png",
+            "description": "test description",
+            "trainingUrl": "https://acceptatie.goodhabitz.com/nl-nl/online-course/22684/vergeet-je-brein-niet.html",
+            "quizCardList": null,
+            "dailyChallengeList": null,
+            "status": "live"
+        },
+        {
+            "id": 2,
+            "courseId": 17706,
+            "name": "[Pending review] Beïnvloeden",
+            "backgroundColor": "#2DD8FE",
+            "imageUrl": "https://sandbox.goodhabitz.com/ghcc_media/0077-8jkzg.png",
+            "description": "test description",
+            "trainingUrl": "https://acceptatie.goodhabitz.com/nl-nl/online-course/22684/vergeet-je-brein-niet.html",
+            "quizCardList": null,
+            "dailyChallengeList": null,
+            "status": "live"
+        },
+        {
+            "id": 3,
+            "courseId": 17706,
+            "name": "[Closed] Vergeet je brein niet",
+            "backgroundColor": "#DA014E",
+            "imageUrl": "https://sandbox.goodhabitz.com/ghcc_media/0145-85tm2.png",
+            "description": "test description",
+            "trainingUrl": "https://acceptatie.goodhabitz.com/nl-nl/online-course/22684/vergeet-je-brein-niet.html",
+            "quizCardList": null,
+            "dailyChallengeList": null,
+            "status": "live"
+        }
+    ],
+    "parameterList": [
+        {
+            "name": "A",
+            "value": "a11xchnxgcn"
+        },
+        {
+            "name": "B",
+            "value": "b100"
+        },
+        {
+            "name": "C",
+            "value": "15"
+        }
+    ]
+}

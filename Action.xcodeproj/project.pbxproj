@@ -8,22 +8,630 @@
 
 /* Begin PBXBuildFile section */
 		46834CB724C9C48900BAF1DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CB624C9C48900BAF1DA /* AppDelegate.swift */; };
-		46834CB924C9C48900BAF1DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CB824C9C48900BAF1DA /* SceneDelegate.swift */; };
-		46834CBB24C9C48900BAF1DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CBA24C9C48900BAF1DA /* ViewController.swift */; };
-		46834CBE24C9C48900BAF1DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46834CBC24C9C48900BAF1DA /* Main.storyboard */; };
-		46834CC024C9C48A00BAF1DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46834CBF24C9C48A00BAF1DA /* Assets.xcassets */; };
-		46834CC324C9C48A00BAF1DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46834CC124C9C48A00BAF1DA /* LaunchScreen.storyboard */; };
+		46834E4A24C9C58300BAF1DA /* ChallengeSelectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CD024C9C58200BAF1DA /* ChallengeSelectionPresenter.swift */; };
+		46834E4B24C9C58300BAF1DA /* ChallengeSelectionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CD124C9C58200BAF1DA /* ChallengeSelectionResponse.swift */; };
+		46834E4C24C9C58300BAF1DA /* ChallengeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CD324C9C58200BAF1DA /* ChallengeSelectionViewController.swift */; };
+		46834E4D24C9C58300BAF1DA /* ChallengeSelectionChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CD424C9C58200BAF1DA /* ChallengeSelectionChildViewController.swift */; };
+		46834E4E24C9C58300BAF1DA /* ChallengeSelectionViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CD524C9C58200BAF1DA /* ChallengeSelectionViewControllerFactory.swift */; };
+		46834E4F24C9C58300BAF1DA /* ChallengeStatusTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CD724C9C58200BAF1DA /* ChallengeStatusTransitioningDelegate.swift */; };
+		46834E5024C9C58300BAF1DA /* ChallengeSelectionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CD824C9C58200BAF1DA /* ChallengeSelectionRequest.swift */; };
+		46834E5124C9C58300BAF1DA /* ChallengeSelectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CD924C9C58200BAF1DA /* ChallengeSelectionInteractor.swift */; };
+		46834E5224C9C58300BAF1DA /* ChallengeSelectionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CDB24C9C58200BAF1DA /* ChallengeSelectionRouter.swift */; };
+		46834E5424C9C58300BAF1DA /* ChallengeProgramPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CE024C9C58200BAF1DA /* ChallengeProgramPresenter.swift */; };
+		46834E5524C9C58300BAF1DA /* ChallengeProgramResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CE124C9C58200BAF1DA /* ChallengeProgramResponse.swift */; };
+		46834E5624C9C58300BAF1DA /* ChallengeProgramLargeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CE324C9C58200BAF1DA /* ChallengeProgramLargeContentView.swift */; };
+		46834E5724C9C58300BAF1DA /* ChallengeProgramContentViewPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CE424C9C58200BAF1DA /* ChallengeProgramContentViewPresentable.swift */; };
+		46834E5824C9C58300BAF1DA /* ChallengeProgramLargeCardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CE524C9C58200BAF1DA /* ChallengeProgramLargeCardContentView.swift */; };
+		46834E5924C9C58300BAF1DA /* ChallengeProgramSmallCardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CE624C9C58200BAF1DA /* ChallengeProgramSmallCardContentView.swift */; };
+		46834E5A24C9C58300BAF1DA /* ChallengeProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CE724C9C58200BAF1DA /* ChallengeProgramViewController.swift */; };
+		46834E5B24C9C58300BAF1DA /* ChallengeProgramViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CE824C9C58200BAF1DA /* ChallengeProgramViewModel.swift */; };
+		46834E5C24C9C58300BAF1DA /* ChallengeProgramSmallContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CE924C9C58200BAF1DA /* ChallengeProgramSmallContentView.swift */; };
+		46834E5D24C9C58300BAF1DA /* ChallengeProgramViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CEA24C9C58200BAF1DA /* ChallengeProgramViewControllerFactory.swift */; };
+		46834E5E24C9C58300BAF1DA /* ChallengeProgramInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CEC24C9C58200BAF1DA /* ChallengeProgramInteractor.swift */; };
+		46834E5F24C9C58300BAF1DA /* ChallengeProgramRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CED24C9C58200BAF1DA /* ChallengeProgramRequest.swift */; };
+		46834E6024C9C58300BAF1DA /* ChallengeProgramRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CEF24C9C58200BAF1DA /* ChallengeProgramRouter.swift */; };
+		46834E6224C9C58300BAF1DA /* ChallengeProgramInfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CF424C9C58200BAF1DA /* ChallengeProgramInfoPresenter.swift */; };
+		46834E6324C9C58300BAF1DA /* ChallengeProgramInfoViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CF624C9C58200BAF1DA /* ChallengeProgramInfoViewModelMapper.swift */; };
+		46834E6424C9C58300BAF1DA /* ChallengeProgramInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CF724C9C58200BAF1DA /* ChallengeProgramInfoResponse.swift */; };
+		46834E6524C9C58300BAF1DA /* ChallengeProgramInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CF924C9C58200BAF1DA /* ChallengeProgramInfoView.swift */; };
+		46834E6624C9C58300BAF1DA /* ChallengeProgramInfoViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CFA24C9C58200BAF1DA /* ChallengeProgramInfoViewControllerFactory.swift */; };
+		46834E6724C9C58300BAF1DA /* ChallengeProgramInfoViewPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CFB24C9C58200BAF1DA /* ChallengeProgramInfoViewPresentable.swift */; };
+		46834E6824C9C58300BAF1DA /* ChallengeProgramInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CFC24C9C58200BAF1DA /* ChallengeProgramInfoViewController.swift */; };
+		46834E6924C9C58300BAF1DA /* ChallengeProgramInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CFD24C9C58200BAF1DA /* ChallengeProgramInfoViewModel.swift */; };
+		46834E6A24C9C58300BAF1DA /* ChallengeProgramInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834CFF24C9C58200BAF1DA /* ChallengeProgramInfoRequest.swift */; };
+		46834E6B24C9C58300BAF1DA /* ChallengeProgramInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D0024C9C58200BAF1DA /* ChallengeProgramInfoInteractor.swift */; };
+		46834E6C24C9C58300BAF1DA /* ChallengeProgramInfoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D0224C9C58200BAF1DA /* ChallengeProgramInfoRouter.swift */; };
+		46834E6E24C9C58300BAF1DA /* LaunchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D0724C9C58200BAF1DA /* LaunchPresenter.swift */; };
+		46834E6F24C9C58300BAF1DA /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D0924C9C58200BAF1DA /* LaunchViewController.swift */; };
+		46834E7024C9C58300BAF1DA /* LaunchViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D0A24C9C58200BAF1DA /* LaunchViewControllerFactory.swift */; };
+		46834E7124C9C58300BAF1DA /* LaunchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D0C24C9C58200BAF1DA /* LaunchInteractor.swift */; };
+		46834E7224C9C58300BAF1DA /* LaunchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D0D24C9C58200BAF1DA /* LaunchRequest.swift */; };
+		46834E7324C9C58300BAF1DA /* LaunchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D0F24C9C58200BAF1DA /* LaunchRouter.swift */; };
+		46834E7524C9C58300BAF1DA /* QuizPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D1424C9C58200BAF1DA /* QuizPresenter.swift */; };
+		46834E7624C9C58300BAF1DA /* QuizAnswersViewPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D1624C9C58200BAF1DA /* QuizAnswersViewPresentable.swift */; };
+		46834E7724C9C58300BAF1DA /* QuizFeedbackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D1724C9C58200BAF1DA /* QuizFeedbackTableViewCell.swift */; };
+		46834E7824C9C58300BAF1DA /* QuizTitleViewPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D1824C9C58200BAF1DA /* QuizTitleViewPresentable.swift */; };
+		46834E7924C9C58300BAF1DA /* QuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D1924C9C58200BAF1DA /* QuizViewModel.swift */; };
+		46834E7A24C9C58300BAF1DA /* QuizFeedbackCardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D1A24C9C58200BAF1DA /* QuizFeedbackCardContentView.swift */; };
+		46834E7B24C9C58300BAF1DA /* QuizFeedbackCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D1B24C9C58200BAF1DA /* QuizFeedbackCardView.swift */; };
+		46834E7C24C9C58300BAF1DA /* QuizQuestionViewPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D1C24C9C58200BAF1DA /* QuizQuestionViewPresentable.swift */; };
+		46834E7D24C9C58300BAF1DA /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D1D24C9C58200BAF1DA /* QuizViewController.swift */; };
+		46834E7E24C9C58300BAF1DA /* QuizExplanationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D1E24C9C58200BAF1DA /* QuizExplanationTableViewCell.swift */; };
+		46834E7F24C9C58300BAF1DA /* QuizQuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D1F24C9C58200BAF1DA /* QuizQuestionTableViewCell.swift */; };
+		46834E8024C9C58300BAF1DA /* QuizSubmitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D2024C9C58200BAF1DA /* QuizSubmitView.swift */; };
+		46834E8124C9C58300BAF1DA /* QuizTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D2124C9C58200BAF1DA /* QuizTitleTableViewCell.swift */; };
+		46834E8224C9C58300BAF1DA /* QuizCardContentViewPresentableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D2224C9C58200BAF1DA /* QuizCardContentViewPresentableItem.swift */; };
+		46834E8324C9C58300BAF1DA /* QuizCardContentViewPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D2324C9C58200BAF1DA /* QuizCardContentViewPresentable.swift */; };
+		46834E8424C9C58300BAF1DA /* QuizExplanationViewPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D2424C9C58200BAF1DA /* QuizExplanationViewPresentable.swift */; };
+		46834E8524C9C58300BAF1DA /* QuizCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D2524C9C58200BAF1DA /* QuizCardView.swift */; };
+		46834E8624C9C58300BAF1DA /* QuizFeedbackContentViewPresentableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D2624C9C58200BAF1DA /* QuizFeedbackContentViewPresentableItem.swift */; };
+		46834E8724C9C58300BAF1DA /* QuizViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D2724C9C58200BAF1DA /* QuizViewControllerFactory.swift */; };
+		46834E8824C9C58300BAF1DA /* QuizMoreInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D2824C9C58200BAF1DA /* QuizMoreInfoTableViewCell.swift */; };
+		46834E8924C9C58300BAF1DA /* QuizFeedbackViewPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D2924C9C58200BAF1DA /* QuizFeedbackViewPresentable.swift */; };
+		46834E8A24C9C58300BAF1DA /* QuizAnswersViewPresentableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D2A24C9C58200BAF1DA /* QuizAnswersViewPresentableItem.swift */; };
+		46834E8B24C9C58300BAF1DA /* QuizAnswersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D2B24C9C58200BAF1DA /* QuizAnswersTableViewCell.swift */; };
+		46834E8C24C9C58300BAF1DA /* QuizCardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D2C24C9C58200BAF1DA /* QuizCardContentView.swift */; };
+		46834E8D24C9C58300BAF1DA /* QuizFeedbackContentViewPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D2D24C9C58200BAF1DA /* QuizFeedbackContentViewPresentable.swift */; };
+		46834E8E24C9C58300BAF1DA /* QuizRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D2F24C9C58200BAF1DA /* QuizRequest.swift */; };
+		46834E8F24C9C58300BAF1DA /* QuizInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D3024C9C58200BAF1DA /* QuizInteractor.swift */; };
+		46834E9024C9C58300BAF1DA /* QuizRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D3224C9C58200BAF1DA /* QuizRouter.swift */; };
+		46834E9224C9C58300BAF1DA /* ChallengeProgramsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D3724C9C58200BAF1DA /* ChallengeProgramsResponse.swift */; };
+		46834E9324C9C58300BAF1DA /* ChallengeProgramsViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D3924C9C58200BAF1DA /* ChallengeProgramsViewModelMapper.swift */; };
+		46834E9424C9C58300BAF1DA /* ChallengeProgramsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D3A24C9C58200BAF1DA /* ChallengeProgramsPresenter.swift */; };
+		46834E9524C9C58300BAF1DA /* ChallengeProgramInfoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D3C24C9C58200BAF1DA /* ChallengeProgramInfoCardView.swift */; };
+		46834E9624C9C58300BAF1DA /* ScrollViewPaginationHighlightCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D3E24C9C58200BAF1DA /* ScrollViewPaginationHighlightCoordinator.swift */; };
+		46834E9724C9C58300BAF1DA /* ChallengeProgramCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D3F24C9C58200BAF1DA /* ChallengeProgramCardView.swift */; };
+		46834E9824C9C58300BAF1DA /* ChallengeProgramsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D4024C9C58200BAF1DA /* ChallengeProgramsViewModel.swift */; };
+		46834E9924C9C58300BAF1DA /* ChallengeProgramsViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D4124C9C58200BAF1DA /* ChallengeProgramsViewControllerFactory.swift */; };
+		46834E9A24C9C58300BAF1DA /* ChallengeProgramCardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D4224C9C58200BAF1DA /* ChallengeProgramCardContentView.swift */; };
+		46834E9B24C9C58300BAF1DA /* ChallengeProgramsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D4324C9C58200BAF1DA /* ChallengeProgramsViewController.swift */; };
+		46834E9C24C9C58300BAF1DA /* ChallengeProgramCardContentViewPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D4424C9C58200BAF1DA /* ChallengeProgramCardContentViewPresentable.swift */; };
+		46834E9D24C9C58300BAF1DA /* ChallengeProgramInfoCardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D4524C9C58200BAF1DA /* ChallengeProgramInfoCardContentView.swift */; };
+		46834E9E24C9C58300BAF1DA /* ChallengeProgramsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D4724C9C58200BAF1DA /* ChallengeProgramsRequest.swift */; };
+		46834E9F24C9C58300BAF1DA /* ChallengeProgramsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D4824C9C58200BAF1DA /* ChallengeProgramsInteractor.swift */; };
+		46834EA024C9C58300BAF1DA /* ChallengeProgramsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D4A24C9C58200BAF1DA /* ChallengeProgramsRouter.swift */; };
+		46834EA224C9C58300BAF1DA /* ChallengeReflectionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D4F24C9C58200BAF1DA /* ChallengeReflectionResponse.swift */; };
+		46834EA324C9C58300BAF1DA /* ChallengeReflectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D5024C9C58200BAF1DA /* ChallengeReflectionPresenter.swift */; };
+		46834EA424C9C58300BAF1DA /* ChallengeReflectionButtonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D5224C9C58200BAF1DA /* ChallengeReflectionButtonsTableViewCell.swift */; };
+		46834EA524C9C58300BAF1DA /* ChallengeReflectionQuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D5324C9C58200BAF1DA /* ChallengeReflectionQuestionTableViewCell.swift */; };
+		46834EA624C9C58300BAF1DA /* ChallengeReflectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D5424C9C58200BAF1DA /* ChallengeReflectionViewModel.swift */; };
+		46834EA724C9C58300BAF1DA /* ChallengeReflectionMetadataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D5524C9C58200BAF1DA /* ChallengeReflectionMetadataTableViewCell.swift */; };
+		46834EA824C9C58300BAF1DA /* ChallengeReflectionMetadataPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D5624C9C58200BAF1DA /* ChallengeReflectionMetadataPresentable.swift */; };
+		46834EA924C9C58300BAF1DA /* ChallengeReflectionButtonsPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D5724C9C58200BAF1DA /* ChallengeReflectionButtonsPresentable.swift */; };
+		46834EAA24C9C58300BAF1DA /* ChallengeReflectionQuestionPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D5824C9C58200BAF1DA /* ChallengeReflectionQuestionPresentable.swift */; };
+		46834EAB24C9C58300BAF1DA /* ChallengeReflectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D5924C9C58200BAF1DA /* ChallengeReflectionViewController.swift */; };
+		46834EAC24C9C58300BAF1DA /* ChallengeReflectionViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D5A24C9C58200BAF1DA /* ChallengeReflectionViewControllerFactory.swift */; };
+		46834EAD24C9C58300BAF1DA /* ChallengeReflectionButtonsTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D5B24C9C58200BAF1DA /* ChallengeReflectionButtonsTableViewDelegate.swift */; };
+		46834EAE24C9C58300BAF1DA /* ChallengeReflectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D5D24C9C58200BAF1DA /* ChallengeReflectionDelegate.swift */; };
+		46834EAF24C9C58300BAF1DA /* ChallengeReflectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D5E24C9C58200BAF1DA /* ChallengeReflectionInteractor.swift */; };
+		46834EB024C9C58300BAF1DA /* ChallengeReflectionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D5F24C9C58300BAF1DA /* ChallengeReflectionRequest.swift */; };
+		46834EB124C9C58300BAF1DA /* ChallengeReflectionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D6124C9C58300BAF1DA /* ChallengeReflectionRouter.swift */; };
+		46834EB324C9C58300BAF1DA /* ChallengesAvailableResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D6624C9C58300BAF1DA /* ChallengesAvailableResponse.swift */; };
+		46834EB424C9C58300BAF1DA /* ChallengesAvailablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D6724C9C58300BAF1DA /* ChallengesAvailablePresenter.swift */; };
+		46834EB524C9C58300BAF1DA /* SemiTransparentLoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D6924C9C58300BAF1DA /* SemiTransparentLoadingIndicatorView.swift */; };
+		46834EB624C9C58300BAF1DA /* ChallengeCardContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D6A24C9C58300BAF1DA /* ChallengeCardContentViewModel.swift */; };
+		46834EB724C9C58300BAF1DA /* ChallengesAvailableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D6B24C9C58300BAF1DA /* ChallengesAvailableViewController.swift */; };
+		46834EB824C9C58300BAF1DA /* ChallengesAvailableViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D6C24C9C58300BAF1DA /* ChallengesAvailableViewControllerFactory.swift */; };
+		46834EB924C9C58300BAF1DA /* ChallengesAvailableInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D6E24C9C58300BAF1DA /* ChallengesAvailableInteractor.swift */; };
+		46834EBA24C9C58300BAF1DA /* ChallengesAvailableRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D6F24C9C58300BAF1DA /* ChallengesAvailableRequest.swift */; };
+		46834EBB24C9C58300BAF1DA /* ChallengesAvailableRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D7124C9C58300BAF1DA /* ChallengesAvailableRouter.swift */; };
+		46834EBD24C9C58300BAF1DA /* ChallengeFinishedViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D7724C9C58300BAF1DA /* ChallengeFinishedViewModelMapper.swift */; };
+		46834EBE24C9C58300BAF1DA /* ChallengeFinishedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D7824C9C58300BAF1DA /* ChallengeFinishedResponse.swift */; };
+		46834EBF24C9C58300BAF1DA /* ChallengeFinishedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D7924C9C58300BAF1DA /* ChallengeFinishedPresenter.swift */; };
+		46834EC024C9C58300BAF1DA /* ChallengeFinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D7B24C9C58300BAF1DA /* ChallengeFinishedViewController.swift */; };
+		46834EC124C9C58300BAF1DA /* ConfettiDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D7C24C9C58300BAF1DA /* ConfettiDecorator.swift */; };
+		46834EC224C9C58300BAF1DA /* ChallengeFinishedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D7D24C9C58300BAF1DA /* ChallengeFinishedViewModel.swift */; };
+		46834EC324C9C58300BAF1DA /* ChallengeFinishedViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D7E24C9C58300BAF1DA /* ChallengeFinishedViewControllerFactory.swift */; };
+		46834EC424C9C58300BAF1DA /* ChallengeFinishedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D8024C9C58300BAF1DA /* ChallengeFinishedInteractor.swift */; };
+		46834EC524C9C58300BAF1DA /* ChallengeFinishedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D8124C9C58300BAF1DA /* ChallengeFinishedRequest.swift */; };
+		46834EC624C9C58300BAF1DA /* ChallengeFinishedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D8324C9C58300BAF1DA /* ChallengeFinishedRouter.swift */; };
+		46834EC824C9C58300BAF1DA /* ChallengeDetailsViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D8924C9C58300BAF1DA /* ChallengeDetailsViewModelMapper.swift */; };
+		46834EC924C9C58300BAF1DA /* ChallengePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D8A24C9C58300BAF1DA /* ChallengePresenter.swift */; };
+		46834ECA24C9C58300BAF1DA /* ChallengeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D8B24C9C58300BAF1DA /* ChallengeResponse.swift */; };
+		46834ECB24C9C58300BAF1DA /* ChallengeBannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D8D24C9C58300BAF1DA /* ChallengeBannerTableViewCell.swift */; };
+		46834ECC24C9C58300BAF1DA /* ChallengeButtonsTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D8E24C9C58300BAF1DA /* ChallengeButtonsTableViewCellDelegate.swift */; };
+		46834ECD24C9C58300BAF1DA /* ChallengeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D8F24C9C58300BAF1DA /* ChallengeDetailsViewModel.swift */; };
+		46834ECE24C9C58300BAF1DA /* ChallengeButtonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D9024C9C58300BAF1DA /* ChallengeButtonsTableViewCell.swift */; };
+		46834ECF24C9C58300BAF1DA /* ChallengeInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D9124C9C58300BAF1DA /* ChallengeInfoTableViewCell.swift */; };
+		46834ED024C9C58300BAF1DA /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D9224C9C58300BAF1DA /* ChallengeViewController.swift */; };
+		46834ED124C9C58300BAF1DA /* ChallengeViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D9324C9C58300BAF1DA /* ChallengeViewControllerFactory.swift */; };
+		46834ED224C9C58300BAF1DA /* ChallengeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D9524C9C58300BAF1DA /* ChallengeRequest.swift */; };
+		46834ED324C9C58400BAF1DA /* ChallengeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D9624C9C58300BAF1DA /* ChallengeInteractor.swift */; };
+		46834ED424C9C58400BAF1DA /* ChallengeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D9824C9C58300BAF1DA /* ChallengeRouter.swift */; };
+		46834ED624C9C58400BAF1DA /* ScannerViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D9C24C9C58300BAF1DA /* ScannerViewControllerFactory.swift */; };
+		46834ED724C9C58400BAF1DA /* ScannerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D9D24C9C58300BAF1DA /* ScannerError.swift */; };
+		46834ED824C9C58400BAF1DA /* ScannerViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D9E24C9C58300BAF1DA /* ScannerViewControllerDelegate.swift */; };
+		46834ED924C9C58400BAF1DA /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834D9F24C9C58300BAF1DA /* ScannerViewController.swift */; };
+		46834EDB24C9C58400BAF1DA /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DA424C9C58300BAF1DA /* LoginResponse.swift */; };
+		46834EDC24C9C58400BAF1DA /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DA524C9C58300BAF1DA /* LoginPresenter.swift */; };
+		46834EDD24C9C58400BAF1DA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DA724C9C58300BAF1DA /* LoginViewModel.swift */; };
+		46834EDE24C9C58400BAF1DA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DA824C9C58300BAF1DA /* LoginViewController.swift */; };
+		46834EDF24C9C58400BAF1DA /* LoginViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DA924C9C58300BAF1DA /* LoginViewControllerFactory.swift */; };
+		46834EE024C9C58400BAF1DA /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DAB24C9C58300BAF1DA /* LoginRequest.swift */; };
+		46834EE124C9C58400BAF1DA /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DAC24C9C58300BAF1DA /* LoginInteractor.swift */; };
+		46834EE224C9C58400BAF1DA /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DAE24C9C58300BAF1DA /* LoginRouter.swift */; };
+		46834EE424C9C58400BAF1DA /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DB324C9C58300BAF1DA /* OnboardingPresenter.swift */; };
+		46834EE524C9C58400BAF1DA /* OnboardingInstructionCardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DB524C9C58300BAF1DA /* OnboardingInstructionCardContentView.swift */; };
+		46834EE624C9C58400BAF1DA /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DB624C9C58300BAF1DA /* OnboardingViewController.swift */; };
+		46834EE724C9C58400BAF1DA /* OnboardingInstructionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DB724C9C58300BAF1DA /* OnboardingInstructionCardView.swift */; };
+		46834EE824C9C58400BAF1DA /* OnboardingViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DB824C9C58300BAF1DA /* OnboardingViewControllerFactory.swift */; };
+		46834EE924C9C58400BAF1DA /* OnboardingInstructionCardContentViewPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DB924C9C58300BAF1DA /* OnboardingInstructionCardContentViewPresentable.swift */; };
+		46834EEA24C9C58400BAF1DA /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DBA24C9C58300BAF1DA /* OnboardingViewModel.swift */; };
+		46834EEB24C9C58400BAF1DA /* OnboardingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DBC24C9C58300BAF1DA /* OnboardingInteractor.swift */; };
+		46834EEC24C9C58400BAF1DA /* OnboardingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DBD24C9C58300BAF1DA /* OnboardingRequest.swift */; };
+		46834EED24C9C58400BAF1DA /* OnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DBF24C9C58300BAF1DA /* OnboardingRouter.swift */; };
+		46834EEF24C9C58400BAF1DA /* ChallengeActiveResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DC424C9C58300BAF1DA /* ChallengeActiveResponse.swift */; };
+		46834EF024C9C58400BAF1DA /* ChallengeActivePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DC524C9C58300BAF1DA /* ChallengeActivePresenter.swift */; };
+		46834EF124C9C58400BAF1DA /* ChallengeActiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DC724C9C58300BAF1DA /* ChallengeActiveViewController.swift */; };
+		46834EF224C9C58400BAF1DA /* ChallengeActiveViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DC824C9C58300BAF1DA /* ChallengeActiveViewControllerFactory.swift */; };
+		46834EF324C9C58400BAF1DA /* ChallengeActiveRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DCA24C9C58300BAF1DA /* ChallengeActiveRequest.swift */; };
+		46834EF424C9C58400BAF1DA /* ChallengeActiveInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DCB24C9C58300BAF1DA /* ChallengeActiveInteractor.swift */; };
+		46834EF524C9C58400BAF1DA /* ChallengeActiveRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DCD24C9C58300BAF1DA /* ChallengeActiveRouter.swift */; };
+		46834EF624C9C58400BAF1DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46834DCF24C9C58300BAF1DA /* LaunchScreen.storyboard */; };
+		46834EF824C9C58400BAF1DA /* InteractiveDiscardCardAnimatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DD524C9C58300BAF1DA /* InteractiveDiscardCardAnimatorDelegate.swift */; };
+		46834EF924C9C58400BAF1DA /* CardStackerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DD624C9C58300BAF1DA /* CardStackerDelegate.swift */; };
+		46834EFA24C9C58400BAF1DA /* InteractiveDiscardCardAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DD724C9C58300BAF1DA /* InteractiveDiscardCardAnimator.swift */; };
+		46834EFB24C9C58400BAF1DA /* CardStacker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DD824C9C58300BAF1DA /* CardStacker.swift */; };
+		46834EFC24C9C58400BAF1DA /* CardStackable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DD924C9C58300BAF1DA /* CardStackable.swift */; };
+		46834EFD24C9C58400BAF1DA /* PresentCardsAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DDB24C9C58300BAF1DA /* PresentCardsAnimator.swift */; };
+		46834EFE24C9C58400BAF1DA /* InteractiveDrawCardAnimatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DDC24C9C58300BAF1DA /* InteractiveDrawCardAnimatorDelegate.swift */; };
+		46834EFF24C9C58400BAF1DA /* CardSpreader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DDD24C9C58300BAF1DA /* CardSpreader.swift */; };
+		46834F0024C9C58400BAF1DA /* InteractiveOpenCardAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DDE24C9C58300BAF1DA /* InteractiveOpenCardAnimator.swift */; };
+		46834F0124C9C58400BAF1DA /* InteractiveOpenCardAnimatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DDF24C9C58300BAF1DA /* InteractiveOpenCardAnimatorDelegate.swift */; };
+		46834F0224C9C58400BAF1DA /* CardDealerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DE024C9C58300BAF1DA /* CardDealerDelegate.swift */; };
+		46834F0324C9C58400BAF1DA /* DealingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DE124C9C58300BAF1DA /* DealingContext.swift */; };
+		46834F0424C9C58400BAF1DA /* RetractCardsAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DE224C9C58300BAF1DA /* RetractCardsAnimator.swift */; };
+		46834F0524C9C58400BAF1DA /* InteractiveDrawCardAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DE324C9C58300BAF1DA /* InteractiveDrawCardAnimator.swift */; };
+		46834F0624C9C58400BAF1DA /* InteractiveCloseCardAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DE424C9C58300BAF1DA /* InteractiveCloseCardAnimator.swift */; };
+		46834F0724C9C58400BAF1DA /* InteractiveCloseCardAnimatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DE524C9C58300BAF1DA /* InteractiveCloseCardAnimatorDelegate.swift */; };
+		46834F0824C9C58400BAF1DA /* InteractiveReturnCardAnimatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DE624C9C58300BAF1DA /* InteractiveReturnCardAnimatorDelegate.swift */; };
+		46834F0924C9C58400BAF1DA /* CardDealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DE724C9C58300BAF1DA /* CardDealer.swift */; };
+		46834F0A24C9C58400BAF1DA /* InteractiveReturnCardAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DE824C9C58300BAF1DA /* InteractiveReturnCardAnimator.swift */; };
+		46834F0B24C9C58400BAF1DA /* CardDealable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DE924C9C58300BAF1DA /* CardDealable.swift */; };
+		46834F0C24C9C58400BAF1DA /* DealingTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DEA24C9C58300BAF1DA /* DealingTable.swift */; };
+		46834F0D24C9C58400BAF1DA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46834DEC24C9C58300BAF1DA /* Localizable.strings */; };
+		46834F0E24C9C58400BAF1DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46834DED24C9C58300BAF1DA /* Assets.xcassets */; };
+		46834F0F24C9C58400BAF1DA /* CircularStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46834DEF24C9C58300BAF1DA /* CircularStd-Book.otf */; };
+		46834F1024C9C58400BAF1DA /* CircularStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46834DF024C9C58300BAF1DA /* CircularStd-Black.otf */; };
+		46834F1124C9C58400BAF1DA /* CircularStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46834DF124C9C58300BAF1DA /* CircularStd-Bold.otf */; };
+		46834F1224C9C58400BAF1DA /* CircularStd-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46834DF224C9C58300BAF1DA /* CircularStd-BookItalic.otf */; };
+		46834F1324C9C58400BAF1DA /* CircularStd-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46834DF324C9C58300BAF1DA /* CircularStd-BlackItalic.otf */; };
+		46834F1424C9C58400BAF1DA /* CircularStd-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46834DF424C9C58300BAF1DA /* CircularStd-BoldItalic.otf */; };
+		46834F1524C9C58400BAF1DA /* CircularStd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46834DF524C9C58300BAF1DA /* CircularStd-Medium.otf */; };
+		46834F1624C9C58400BAF1DA /* CardDisplayLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DF724C9C58300BAF1DA /* CardDisplayLogic.swift */; };
+		46834F1724C9C58400BAF1DA /* ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DF824C9C58300BAF1DA /* ConfigurableView.swift */; };
+		46834F1824C9C58400BAF1DA /* ChallengeBannerViewPresentableMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DFA24C9C58300BAF1DA /* ChallengeBannerViewPresentableMapper.swift */; };
+		46834F1A24C9C58400BAF1DA /* ChallengeInfoPresentableMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DFD24C9C58300BAF1DA /* ChallengeInfoPresentableMapper.swift */; };
+		46834F1B24C9C58400BAF1DA /* ChallengeCardContentViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834DFE24C9C58300BAF1DA /* ChallengeCardContentViewModelMapper.swift */; };
+		46834F1C24C9C58400BAF1DA /* CGFloat+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E0024C9C58300BAF1DA /* CGFloat+Helper.swift */; };
+		46834F1D24C9C58400BAF1DA /* UIView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E0124C9C58300BAF1DA /* UIView+Helper.swift */; };
+		46834F1E24C9C58400BAF1DA /* UIViewControllerContextTransitioning+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E0224C9C58300BAF1DA /* UIViewControllerContextTransitioning+Helper.swift */; };
+		46834F1F24C9C58400BAF1DA /* String+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E0324C9C58300BAF1DA /* String+Helper.swift */; };
+		46834F2024C9C58400BAF1DA /* CardCloseCollapseAnimatableContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E0624C9C58300BAF1DA /* CardCloseCollapseAnimatableContext.swift */; };
+		46834F2124C9C58400BAF1DA /* MaskCollapseAnimatableContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E0724C9C58300BAF1DA /* MaskCollapseAnimatableContext.swift */; };
+		46834F2224C9C58400BAF1DA /* MaskCollapseNavigationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E0824C9C58300BAF1DA /* MaskCollapseNavigationAnimator.swift */; };
+		46834F2324C9C58400BAF1DA /* CardOpenExpandAnimatableContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E0924C9C58300BAF1DA /* CardOpenExpandAnimatableContext.swift */; };
+		46834F2424C9C58400BAF1DA /* CardExpandNavigationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E0A24C9C58300BAF1DA /* CardExpandNavigationAnimator.swift */; };
+		46834F2524C9C58400BAF1DA /* ModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E0B24C9C58300BAF1DA /* ModalPresentationController.swift */; };
+		46834F2624C9C58400BAF1DA /* MaskExpandAnimatableContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E0C24C9C58300BAF1DA /* MaskExpandAnimatableContext.swift */; };
+		46834F2724C9C58400BAF1DA /* CardCollapseAnimatableContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E0D24C9C58300BAF1DA /* CardCollapseAnimatableContext.swift */; };
+		46834F2824C9C58400BAF1DA /* CardOpenExpandNavigationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E0E24C9C58300BAF1DA /* CardOpenExpandNavigationAnimator.swift */; };
+		46834F2924C9C58400BAF1DA /* CardExpandAnimatableContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E0F24C9C58300BAF1DA /* CardExpandAnimatableContext.swift */; };
+		46834F2A24C9C58400BAF1DA /* CardCloseCollapseNavigationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E1024C9C58300BAF1DA /* CardCloseCollapseNavigationAnimator.swift */; };
+		46834F2B24C9C58400BAF1DA /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E1124C9C58300BAF1DA /* NavigationController.swift */; };
+		46834F2C24C9C58400BAF1DA /* MaskExpandNavigationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E1224C9C58300BAF1DA /* MaskExpandNavigationAnimator.swift */; };
+		46834F2D24C9C58400BAF1DA /* CardCollapseNavigationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E1324C9C58300BAF1DA /* CardCollapseNavigationAnimator.swift */; };
+		46834F2E24C9C58400BAF1DA /* SimpleCardContentViewPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E1624C9C58300BAF1DA /* SimpleCardContentViewPresentable.swift */; };
+		46834F2F24C9C58400BAF1DA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E1724C9C58300BAF1DA /* CardView.swift */; };
+		46834F3024C9C58400BAF1DA /* CardDeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E1824C9C58300BAF1DA /* CardDeckView.swift */; };
+		46834F3124C9C58400BAF1DA /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E1924C9C58300BAF1DA /* Card.swift */; };
+		46834F3224C9C58400BAF1DA /* SimpleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E1A24C9C58300BAF1DA /* SimpleCardView.swift */; };
+		46834F3324C9C58400BAF1DA /* CardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E1B24C9C58300BAF1DA /* CardContentView.swift */; };
+		46834F3424C9C58400BAF1DA /* SimpleCardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E1C24C9C58300BAF1DA /* SimpleCardContentView.swift */; };
+		46834F3524C9C58400BAF1DA /* VideoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E1D24C9C58300BAF1DA /* VideoPreviewView.swift */; };
+		46834F3624C9C58400BAF1DA /* ChallengeInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E1F24C9C58300BAF1DA /* ChallengeInfoViewModel.swift */; };
+		46834F3724C9C58400BAF1DA /* ChallengeInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E2024C9C58300BAF1DA /* ChallengeInfoView.swift */; };
+		46834F3824C9C58400BAF1DA /* ChallengeInfoPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E2124C9C58300BAF1DA /* ChallengeInfoPresentable.swift */; };
+		46834F3924C9C58400BAF1DA /* GHButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E2224C9C58300BAF1DA /* GHButton.swift */; };
+		46834F3A24C9C58400BAF1DA /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E2324C9C58300BAF1DA /* ScrollView.swift */; };
+		46834F3B24C9C58400BAF1DA /* GHDiscreteSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E2424C9C58300BAF1DA /* GHDiscreteSlider.swift */; };
+		46834F3C24C9C58400BAF1DA /* ChallengeVideoBannerViewPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E2624C9C58300BAF1DA /* ChallengeVideoBannerViewPresentable.swift */; };
+		46834F3D24C9C58400BAF1DA /* ChallengeVideoBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E2724C9C58300BAF1DA /* ChallengeVideoBannerView.swift */; };
+		46834F3E24C9C58400BAF1DA /* ChallengeImageBannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E2824C9C58300BAF1DA /* ChallengeImageBannerViewModel.swift */; };
+		46834F3F24C9C58400BAF1DA /* ChallengeQuoteBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E2924C9C58300BAF1DA /* ChallengeQuoteBannerView.swift */; };
+		46834F4024C9C58400BAF1DA /* ChallengeImageBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E2A24C9C58300BAF1DA /* ChallengeImageBannerView.swift */; };
+		46834F4124C9C58400BAF1DA /* ChallengeQuoteBannerViewPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E2B24C9C58300BAF1DA /* ChallengeQuoteBannerViewPresentable.swift */; };
+		46834F4224C9C58400BAF1DA /* ChallengeBannerViewPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E2C24C9C58300BAF1DA /* ChallengeBannerViewPresentable.swift */; };
+		46834F4324C9C58400BAF1DA /* ChallengeImageBannerViewPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E2D24C9C58300BAF1DA /* ChallengeImageBannerViewPresentable.swift */; };
+		46834F4424C9C58400BAF1DA /* ChallengeQuoteBannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E2E24C9C58300BAF1DA /* ChallengeQuoteBannerViewModel.swift */; };
+		46834F4524C9C58400BAF1DA /* ChallengeVideoBannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E2F24C9C58300BAF1DA /* ChallengeVideoBannerViewModel.swift */; };
+		46834F4624C9C58400BAF1DA /* ChallengeFrontSideCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E3124C9C58300BAF1DA /* ChallengeFrontSideCardView.swift */; };
+		46834F4724C9C58400BAF1DA /* ChallengeBackSideCardContentViewPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E3224C9C58300BAF1DA /* ChallengeBackSideCardContentViewPresentable.swift */; };
+		46834F4824C9C58400BAF1DA /* ChallengeBackSideCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E3324C9C58300BAF1DA /* ChallengeBackSideCardView.swift */; };
+		46834F4924C9C58400BAF1DA /* ChallengeFrontSideCardContentViewPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E3424C9C58300BAF1DA /* ChallengeFrontSideCardContentViewPresentable.swift */; };
+		46834F4A24C9C58400BAF1DA /* ChallengeBackSideCardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E3524C9C58300BAF1DA /* ChallengeBackSideCardContentView.swift */; };
+		46834F4B24C9C58400BAF1DA /* ChallengeFrontSideCardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E3624C9C58300BAF1DA /* ChallengeFrontSideCardContentView.swift */; };
+		46834F4C24C9C58400BAF1DA /* GHChevronButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E3724C9C58300BAF1DA /* GHChevronButton.swift */; };
+		46834F4D24C9C58400BAF1DA /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E3924C9C58300BAF1DA /* InfoView.swift */; };
+		46834F4E24C9C58400BAF1DA /* InfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E3A24C9C58300BAF1DA /* InfoViewModel.swift */; };
+		46834F4F24C9C58400BAF1DA /* InfoViewPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E3B24C9C58300BAF1DA /* InfoViewPresentable.swift */; };
+		46834F5124C9C58400BAF1DA /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E3F24C9C58300BAF1DA /* StyleGuide.swift */; };
+		46834F5224C9C58400BAF1DA /* StyleGuide+Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E4024C9C58300BAF1DA /* StyleGuide+Fonts.swift */; };
+		46834F5324C9C58400BAF1DA /* StyleGuide+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E4124C9C58300BAF1DA /* StyleGuide+Layout.swift */; };
+		46834F5424C9C58400BAF1DA /* StyleGuide+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834E4224C9C58300BAF1DA /* StyleGuide+Colors.swift */; };
+		46834F5A24C9C93600BAF1DA /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F5924C9C93600BAF1DA /* LoginWorker.swift */; };
+		46834F5C24C9C9C700BAF1DA /* FirstRunWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F5B24C9C9C700BAF1DA /* FirstRunWorker.swift */; };
+		46834F5E24C9CA5B00BAF1DA /* CheckOnboardingShownWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F5D24C9CA5B00BAF1DA /* CheckOnboardingShownWorker.swift */; };
+		46834F6124C9D28C00BAF1DA /* GetDailyChallengesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F6024C9D28C00BAF1DA /* GetDailyChallengesWorker.swift */; };
+		46834F6A24C9F43100BAF1DA /* ActivateDailyChallengeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F6924C9F43100BAF1DA /* ActivateDailyChallengeWorker.swift */; };
+		46834F6C24CA002400BAF1DA /* UIColor+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F6B24CA002400BAF1DA /* UIColor+Helper.swift */; };
+		46834F7124CA050900BAF1DA /* SubmitReflectionAnswersWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F7024CA050900BAF1DA /* SubmitReflectionAnswersWorker.swift */; };
+		46834F7424CA05B200BAF1DA /* SetOnboardingShownWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F7324CA05B200BAF1DA /* SetOnboardingShownWorker.swift */; };
+		46834F7824CA078100BAF1DA /* SubmitChallengeAnswersWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F7724CA078100BAF1DA /* SubmitChallengeAnswersWorker.swift */; };
+		46834F7B24CA07F300BAF1DA /* UITableView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F7A24CA07F300BAF1DA /* UITableView+Helper.swift */; };
+		46834F7E24CA0A1F00BAF1DA /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F7D24CA0A1F00BAF1DA /* Challenge.swift */; };
+		46834F8024CA0A6400BAF1DA /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F7F24CA0A6400BAF1DA /* Banner.swift */; };
+		46834F8224CA0A9200BAF1DA /* BannerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F8124CA0A9200BAF1DA /* BannerType.swift */; };
+		46834F8424CA0ABC00BAF1DA /* AdditionalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F8324CA0ABC00BAF1DA /* AdditionalInfo.swift */; };
+		46834F8624CA0AE200BAF1DA /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F8524CA0AE200BAF1DA /* Assignment.swift */; };
+		46834F8824CA0B0200BAF1DA /* SelectOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F8724CA0B0200BAF1DA /* SelectOption.swift */; };
+		46834F8A24CA0B3700BAF1DA /* ChallengeProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F8924CA0B3700BAF1DA /* ChallengeProgram.swift */; };
+		46834F8C24CA0B6E00BAF1DA /* ReflectionAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F8B24CA0B6E00BAF1DA /* ReflectionAnswer.swift */; };
+		46834F8E24CA0BAA00BAF1DA /* Array+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F8D24CA0BAA00BAF1DA /* Array+Helper.swift */; };
+		46834F9124CA0C1700BAF1DA /* GetChallengeProgramsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F9024CA0C1700BAF1DA /* GetChallengeProgramsWorker.swift */; };
+		46834F9324CA0C5E00BAF1DA /* AppSessionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F9224CA0C5E00BAF1DA /* AppSessionWorker.swift */; };
+		46834FA124CA0D3B00BAF1DA /* CardDeckEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F9524CA0D3A00BAF1DA /* CardDeckEntity.swift */; };
+		46834FA224CA0D3B00BAF1DA /* KeywordEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F9624CA0D3A00BAF1DA /* KeywordEntity.swift */; };
+		46834FA324CA0D3B00BAF1DA /* QuizCardEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F9724CA0D3A00BAF1DA /* QuizCardEntity.swift */; };
+		46834FA424CA0D3B00BAF1DA /* ReflectionQuestionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F9824CA0D3A00BAF1DA /* ReflectionQuestionEntity.swift */; };
+		46834FA524CA0D3B00BAF1DA /* SelectOptionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F9924CA0D3A00BAF1DA /* SelectOptionEntity.swift */; };
+		46834FA624CA0D3B00BAF1DA /* ChallengeElementEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F9A24CA0D3A00BAF1DA /* ChallengeElementEntity.swift */; };
+		46834FA724CA0D3B00BAF1DA /* ChallengeElementTypeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F9B24CA0D3A00BAF1DA /* ChallengeElementTypeEntity.swift */; };
+		46834FA824CA0D3B00BAF1DA /* AppSessionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F9C24CA0D3B00BAF1DA /* AppSessionResponse.swift */; };
+		46834FA924CA0D3B00BAF1DA /* ChallengeCardEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F9D24CA0D3B00BAF1DA /* ChallengeCardEntity.swift */; };
+		46834FAA24CA0D3B00BAF1DA /* ActivateDailyChallengeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F9E24CA0D3B00BAF1DA /* ActivateDailyChallengeResponse.swift */; };
+		46834FAB24CA0D3B00BAF1DA /* DailyChallengeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834F9F24CA0D3B00BAF1DA /* DailyChallengeEntity.swift */; };
+		46834FAC24CA0D3B00BAF1DA /* ActivateDailyChallengePayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834FA024CA0D3B00BAF1DA /* ActivateDailyChallengePayload.swift */; };
+		46834FAE24CA0E8700BAF1DA /* AssignmentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834FAD24CA0E8700BAF1DA /* AssignmentType.swift */; };
+		46834FB024CA0EDC00BAF1DA /* UIStackView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834FAF24CA0EDC00BAF1DA /* UIStackView+Helper.swift */; };
+		46834FB224CA12B200BAF1DA /* ChallengeProgramsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834FB124CA12B200BAF1DA /* ChallengeProgramsMapper.swift */; };
+		46834FB524CA1AEB00BAF1DA /* UIScrollView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834FB424CA1AEB00BAF1DA /* UIScrollView+Helper.swift */; };
+		46834FB924CA1C7300BAF1DA /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46834FB624CA1C7300BAF1DA /* Kingfisher.framework */; };
+		46834FBA24CA1C7300BAF1DA /* EasyPeasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46834FB724CA1C7300BAF1DA /* EasyPeasy.framework */; };
+		46834FBB24CA1C7300BAF1DA /* SwiftKeychainWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46834FB824CA1C7300BAF1DA /* SwiftKeychainWrapper.framework */; };
+		46834FBE24CA227300BAF1DA /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834FBD24CA227300BAF1DA /* Provider.swift */; };
+		46834FC024CA22E800BAF1DA /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834FBF24CA22E800BAF1DA /* EndPoint.swift */; };
+		46834FC424CA25CD00BAF1DA /* JsonProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834FC324CA25CD00BAF1DA /* JsonProvider.swift */; };
+		46834FCC24CA268500BAF1DA /* AppSession.json in Resources */ = {isa = PBXBuildFile; fileRef = 46834FC624CA268500BAF1DA /* AppSession.json */; };
+		46834FCD24CA268500BAF1DA /* AppDailyChallenge_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 46834FC724CA268500BAF1DA /* AppDailyChallenge_1.json */; };
+		46834FCE24CA268500BAF1DA /* AppDailyChallenge_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 46834FC824CA268500BAF1DA /* AppDailyChallenge_2.json */; };
+		46834FCF24CA268500BAF1DA /* AppDailyChallenge_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 46834FC924CA268500BAF1DA /* AppDailyChallenge_3.json */; };
+		46834FD024CA268500BAF1DA /* ActivateDailyChallenge.json in Resources */ = {isa = PBXBuildFile; fileRef = 46834FCA24CA268500BAF1DA /* ActivateDailyChallenge.json */; };
+		46834FD124CA268500BAF1DA /* AppDailyChallenge_0.json in Resources */ = {isa = PBXBuildFile; fileRef = 46834FCB24CA268500BAF1DA /* AppDailyChallenge_0.json */; };
+		46834FD324CA2E7100BAF1DA /* GetChallengesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834FD224CA2E7100BAF1DA /* GetChallengesWorker.swift */; };
+		46834FD624CA2F8E00BAF1DA /* ChallengeMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834FD524CA2F8E00BAF1DA /* ChallengeMapper.swift */; };
+		46834FD824CA316700BAF1DA /* BannerMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834FD724CA316700BAF1DA /* BannerMapper.swift */; };
+		46834FDA24CA31B600BAF1DA /* BannerTypeMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834FD924CA31B600BAF1DA /* BannerTypeMapper.swift */; };
+		46834FDC24CA31F400BAF1DA /* AdditionalInfoMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834FDB24CA31F400BAF1DA /* AdditionalInfoMapper.swift */; };
+		46834FDE24CA322200BAF1DA /* AssignmentMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834FDD24CA322200BAF1DA /* AssignmentMapper.swift */; };
+		46834FE024CA325300BAF1DA /* AssignmentTypeMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834FDF24CA325300BAF1DA /* AssignmentTypeMapper.swift */; };
+		46834FE224CA32D800BAF1DA /* SelectOptionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834FE124CA32D800BAF1DA /* SelectOptionMapper.swift */; };
+		46834FE424CA33FC00BAF1DA /* ChallengeStatusMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46834FE324CA33FC00BAF1DA /* ChallengeStatusMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		46834CB324C9C48900BAF1DA /* Action.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Action.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46834CB624C9C48900BAF1DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46834CB824C9C48900BAF1DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		46834CBA24C9C48900BAF1DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		46834CBD24C9C48900BAF1DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		46834CBF24C9C48A00BAF1DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		46834CC224C9C48A00BAF1DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46834CC424C9C48A00BAF1DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46834CD024C9C58200BAF1DA /* ChallengeSelectionPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeSelectionPresenter.swift; sourceTree = "<group>"; };
+		46834CD124C9C58200BAF1DA /* ChallengeSelectionResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeSelectionResponse.swift; sourceTree = "<group>"; };
+		46834CD324C9C58200BAF1DA /* ChallengeSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeSelectionViewController.swift; sourceTree = "<group>"; };
+		46834CD424C9C58200BAF1DA /* ChallengeSelectionChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeSelectionChildViewController.swift; sourceTree = "<group>"; };
+		46834CD524C9C58200BAF1DA /* ChallengeSelectionViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeSelectionViewControllerFactory.swift; sourceTree = "<group>"; };
+		46834CD724C9C58200BAF1DA /* ChallengeStatusTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeStatusTransitioningDelegate.swift; sourceTree = "<group>"; };
+		46834CD824C9C58200BAF1DA /* ChallengeSelectionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeSelectionRequest.swift; sourceTree = "<group>"; };
+		46834CD924C9C58200BAF1DA /* ChallengeSelectionInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeSelectionInteractor.swift; sourceTree = "<group>"; };
+		46834CDB24C9C58200BAF1DA /* ChallengeSelectionRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeSelectionRouter.swift; sourceTree = "<group>"; };
+		46834CE024C9C58200BAF1DA /* ChallengeProgramPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramPresenter.swift; sourceTree = "<group>"; };
+		46834CE124C9C58200BAF1DA /* ChallengeProgramResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramResponse.swift; sourceTree = "<group>"; };
+		46834CE324C9C58200BAF1DA /* ChallengeProgramLargeContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramLargeContentView.swift; sourceTree = "<group>"; };
+		46834CE424C9C58200BAF1DA /* ChallengeProgramContentViewPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramContentViewPresentable.swift; sourceTree = "<group>"; };
+		46834CE524C9C58200BAF1DA /* ChallengeProgramLargeCardContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramLargeCardContentView.swift; sourceTree = "<group>"; };
+		46834CE624C9C58200BAF1DA /* ChallengeProgramSmallCardContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramSmallCardContentView.swift; sourceTree = "<group>"; };
+		46834CE724C9C58200BAF1DA /* ChallengeProgramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramViewController.swift; sourceTree = "<group>"; };
+		46834CE824C9C58200BAF1DA /* ChallengeProgramViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramViewModel.swift; sourceTree = "<group>"; };
+		46834CE924C9C58200BAF1DA /* ChallengeProgramSmallContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramSmallContentView.swift; sourceTree = "<group>"; };
+		46834CEA24C9C58200BAF1DA /* ChallengeProgramViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramViewControllerFactory.swift; sourceTree = "<group>"; };
+		46834CEC24C9C58200BAF1DA /* ChallengeProgramInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramInteractor.swift; sourceTree = "<group>"; };
+		46834CED24C9C58200BAF1DA /* ChallengeProgramRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramRequest.swift; sourceTree = "<group>"; };
+		46834CEF24C9C58200BAF1DA /* ChallengeProgramRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramRouter.swift; sourceTree = "<group>"; };
+		46834CF424C9C58200BAF1DA /* ChallengeProgramInfoPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramInfoPresenter.swift; sourceTree = "<group>"; };
+		46834CF624C9C58200BAF1DA /* ChallengeProgramInfoViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramInfoViewModelMapper.swift; sourceTree = "<group>"; };
+		46834CF724C9C58200BAF1DA /* ChallengeProgramInfoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramInfoResponse.swift; sourceTree = "<group>"; };
+		46834CF924C9C58200BAF1DA /* ChallengeProgramInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramInfoView.swift; sourceTree = "<group>"; };
+		46834CFA24C9C58200BAF1DA /* ChallengeProgramInfoViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramInfoViewControllerFactory.swift; sourceTree = "<group>"; };
+		46834CFB24C9C58200BAF1DA /* ChallengeProgramInfoViewPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramInfoViewPresentable.swift; sourceTree = "<group>"; };
+		46834CFC24C9C58200BAF1DA /* ChallengeProgramInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramInfoViewController.swift; sourceTree = "<group>"; };
+		46834CFD24C9C58200BAF1DA /* ChallengeProgramInfoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramInfoViewModel.swift; sourceTree = "<group>"; };
+		46834CFF24C9C58200BAF1DA /* ChallengeProgramInfoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramInfoRequest.swift; sourceTree = "<group>"; };
+		46834D0024C9C58200BAF1DA /* ChallengeProgramInfoInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramInfoInteractor.swift; sourceTree = "<group>"; };
+		46834D0224C9C58200BAF1DA /* ChallengeProgramInfoRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramInfoRouter.swift; sourceTree = "<group>"; };
+		46834D0724C9C58200BAF1DA /* LaunchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchPresenter.swift; sourceTree = "<group>"; };
+		46834D0924C9C58200BAF1DA /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		46834D0A24C9C58200BAF1DA /* LaunchViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewControllerFactory.swift; sourceTree = "<group>"; };
+		46834D0C24C9C58200BAF1DA /* LaunchInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchInteractor.swift; sourceTree = "<group>"; };
+		46834D0D24C9C58200BAF1DA /* LaunchRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchRequest.swift; sourceTree = "<group>"; };
+		46834D0F24C9C58200BAF1DA /* LaunchRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchRouter.swift; sourceTree = "<group>"; };
+		46834D1424C9C58200BAF1DA /* QuizPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizPresenter.swift; sourceTree = "<group>"; };
+		46834D1624C9C58200BAF1DA /* QuizAnswersViewPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizAnswersViewPresentable.swift; sourceTree = "<group>"; };
+		46834D1724C9C58200BAF1DA /* QuizFeedbackTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizFeedbackTableViewCell.swift; sourceTree = "<group>"; };
+		46834D1824C9C58200BAF1DA /* QuizTitleViewPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizTitleViewPresentable.swift; sourceTree = "<group>"; };
+		46834D1924C9C58200BAF1DA /* QuizViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewModel.swift; sourceTree = "<group>"; };
+		46834D1A24C9C58200BAF1DA /* QuizFeedbackCardContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizFeedbackCardContentView.swift; sourceTree = "<group>"; };
+		46834D1B24C9C58200BAF1DA /* QuizFeedbackCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizFeedbackCardView.swift; sourceTree = "<group>"; };
+		46834D1C24C9C58200BAF1DA /* QuizQuestionViewPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizQuestionViewPresentable.swift; sourceTree = "<group>"; };
+		46834D1D24C9C58200BAF1DA /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		46834D1E24C9C58200BAF1DA /* QuizExplanationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizExplanationTableViewCell.swift; sourceTree = "<group>"; };
+		46834D1F24C9C58200BAF1DA /* QuizQuestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizQuestionTableViewCell.swift; sourceTree = "<group>"; };
+		46834D2024C9C58200BAF1DA /* QuizSubmitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizSubmitView.swift; sourceTree = "<group>"; };
+		46834D2124C9C58200BAF1DA /* QuizTitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizTitleTableViewCell.swift; sourceTree = "<group>"; };
+		46834D2224C9C58200BAF1DA /* QuizCardContentViewPresentableItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizCardContentViewPresentableItem.swift; sourceTree = "<group>"; };
+		46834D2324C9C58200BAF1DA /* QuizCardContentViewPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizCardContentViewPresentable.swift; sourceTree = "<group>"; };
+		46834D2424C9C58200BAF1DA /* QuizExplanationViewPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizExplanationViewPresentable.swift; sourceTree = "<group>"; };
+		46834D2524C9C58200BAF1DA /* QuizCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizCardView.swift; sourceTree = "<group>"; };
+		46834D2624C9C58200BAF1DA /* QuizFeedbackContentViewPresentableItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizFeedbackContentViewPresentableItem.swift; sourceTree = "<group>"; };
+		46834D2724C9C58200BAF1DA /* QuizViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewControllerFactory.swift; sourceTree = "<group>"; };
+		46834D2824C9C58200BAF1DA /* QuizMoreInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizMoreInfoTableViewCell.swift; sourceTree = "<group>"; };
+		46834D2924C9C58200BAF1DA /* QuizFeedbackViewPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizFeedbackViewPresentable.swift; sourceTree = "<group>"; };
+		46834D2A24C9C58200BAF1DA /* QuizAnswersViewPresentableItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizAnswersViewPresentableItem.swift; sourceTree = "<group>"; };
+		46834D2B24C9C58200BAF1DA /* QuizAnswersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizAnswersTableViewCell.swift; sourceTree = "<group>"; };
+		46834D2C24C9C58200BAF1DA /* QuizCardContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizCardContentView.swift; sourceTree = "<group>"; };
+		46834D2D24C9C58200BAF1DA /* QuizFeedbackContentViewPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizFeedbackContentViewPresentable.swift; sourceTree = "<group>"; };
+		46834D2F24C9C58200BAF1DA /* QuizRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizRequest.swift; sourceTree = "<group>"; };
+		46834D3024C9C58200BAF1DA /* QuizInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizInteractor.swift; sourceTree = "<group>"; };
+		46834D3224C9C58200BAF1DA /* QuizRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizRouter.swift; sourceTree = "<group>"; };
+		46834D3724C9C58200BAF1DA /* ChallengeProgramsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramsResponse.swift; sourceTree = "<group>"; };
+		46834D3924C9C58200BAF1DA /* ChallengeProgramsViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramsViewModelMapper.swift; sourceTree = "<group>"; };
+		46834D3A24C9C58200BAF1DA /* ChallengeProgramsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramsPresenter.swift; sourceTree = "<group>"; };
+		46834D3C24C9C58200BAF1DA /* ChallengeProgramInfoCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramInfoCardView.swift; sourceTree = "<group>"; };
+		46834D3E24C9C58200BAF1DA /* ScrollViewPaginationHighlightCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewPaginationHighlightCoordinator.swift; sourceTree = "<group>"; };
+		46834D3F24C9C58200BAF1DA /* ChallengeProgramCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramCardView.swift; sourceTree = "<group>"; };
+		46834D4024C9C58200BAF1DA /* ChallengeProgramsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramsViewModel.swift; sourceTree = "<group>"; };
+		46834D4124C9C58200BAF1DA /* ChallengeProgramsViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramsViewControllerFactory.swift; sourceTree = "<group>"; };
+		46834D4224C9C58200BAF1DA /* ChallengeProgramCardContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramCardContentView.swift; sourceTree = "<group>"; };
+		46834D4324C9C58200BAF1DA /* ChallengeProgramsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramsViewController.swift; sourceTree = "<group>"; };
+		46834D4424C9C58200BAF1DA /* ChallengeProgramCardContentViewPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramCardContentViewPresentable.swift; sourceTree = "<group>"; };
+		46834D4524C9C58200BAF1DA /* ChallengeProgramInfoCardContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramInfoCardContentView.swift; sourceTree = "<group>"; };
+		46834D4724C9C58200BAF1DA /* ChallengeProgramsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramsRequest.swift; sourceTree = "<group>"; };
+		46834D4824C9C58200BAF1DA /* ChallengeProgramsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramsInteractor.swift; sourceTree = "<group>"; };
+		46834D4A24C9C58200BAF1DA /* ChallengeProgramsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeProgramsRouter.swift; sourceTree = "<group>"; };
+		46834D4F24C9C58200BAF1DA /* ChallengeReflectionResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeReflectionResponse.swift; sourceTree = "<group>"; };
+		46834D5024C9C58200BAF1DA /* ChallengeReflectionPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeReflectionPresenter.swift; sourceTree = "<group>"; };
+		46834D5224C9C58200BAF1DA /* ChallengeReflectionButtonsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeReflectionButtonsTableViewCell.swift; sourceTree = "<group>"; };
+		46834D5324C9C58200BAF1DA /* ChallengeReflectionQuestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeReflectionQuestionTableViewCell.swift; sourceTree = "<group>"; };
+		46834D5424C9C58200BAF1DA /* ChallengeReflectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeReflectionViewModel.swift; sourceTree = "<group>"; };
+		46834D5524C9C58200BAF1DA /* ChallengeReflectionMetadataTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeReflectionMetadataTableViewCell.swift; sourceTree = "<group>"; };
+		46834D5624C9C58200BAF1DA /* ChallengeReflectionMetadataPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeReflectionMetadataPresentable.swift; sourceTree = "<group>"; };
+		46834D5724C9C58200BAF1DA /* ChallengeReflectionButtonsPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeReflectionButtonsPresentable.swift; sourceTree = "<group>"; };
+		46834D5824C9C58200BAF1DA /* ChallengeReflectionQuestionPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeReflectionQuestionPresentable.swift; sourceTree = "<group>"; };
+		46834D5924C9C58200BAF1DA /* ChallengeReflectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeReflectionViewController.swift; sourceTree = "<group>"; };
+		46834D5A24C9C58200BAF1DA /* ChallengeReflectionViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeReflectionViewControllerFactory.swift; sourceTree = "<group>"; };
+		46834D5B24C9C58200BAF1DA /* ChallengeReflectionButtonsTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeReflectionButtonsTableViewDelegate.swift; sourceTree = "<group>"; };
+		46834D5D24C9C58200BAF1DA /* ChallengeReflectionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeReflectionDelegate.swift; sourceTree = "<group>"; };
+		46834D5E24C9C58200BAF1DA /* ChallengeReflectionInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeReflectionInteractor.swift; sourceTree = "<group>"; };
+		46834D5F24C9C58300BAF1DA /* ChallengeReflectionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeReflectionRequest.swift; sourceTree = "<group>"; };
+		46834D6124C9C58300BAF1DA /* ChallengeReflectionRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeReflectionRouter.swift; sourceTree = "<group>"; };
+		46834D6624C9C58300BAF1DA /* ChallengesAvailableResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesAvailableResponse.swift; sourceTree = "<group>"; };
+		46834D6724C9C58300BAF1DA /* ChallengesAvailablePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesAvailablePresenter.swift; sourceTree = "<group>"; };
+		46834D6924C9C58300BAF1DA /* SemiTransparentLoadingIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemiTransparentLoadingIndicatorView.swift; sourceTree = "<group>"; };
+		46834D6A24C9C58300BAF1DA /* ChallengeCardContentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeCardContentViewModel.swift; sourceTree = "<group>"; };
+		46834D6B24C9C58300BAF1DA /* ChallengesAvailableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesAvailableViewController.swift; sourceTree = "<group>"; };
+		46834D6C24C9C58300BAF1DA /* ChallengesAvailableViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesAvailableViewControllerFactory.swift; sourceTree = "<group>"; };
+		46834D6E24C9C58300BAF1DA /* ChallengesAvailableInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesAvailableInteractor.swift; sourceTree = "<group>"; };
+		46834D6F24C9C58300BAF1DA /* ChallengesAvailableRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesAvailableRequest.swift; sourceTree = "<group>"; };
+		46834D7124C9C58300BAF1DA /* ChallengesAvailableRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesAvailableRouter.swift; sourceTree = "<group>"; };
+		46834D7724C9C58300BAF1DA /* ChallengeFinishedViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeFinishedViewModelMapper.swift; sourceTree = "<group>"; };
+		46834D7824C9C58300BAF1DA /* ChallengeFinishedResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeFinishedResponse.swift; sourceTree = "<group>"; };
+		46834D7924C9C58300BAF1DA /* ChallengeFinishedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeFinishedPresenter.swift; sourceTree = "<group>"; };
+		46834D7B24C9C58300BAF1DA /* ChallengeFinishedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeFinishedViewController.swift; sourceTree = "<group>"; };
+		46834D7C24C9C58300BAF1DA /* ConfettiDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfettiDecorator.swift; sourceTree = "<group>"; };
+		46834D7D24C9C58300BAF1DA /* ChallengeFinishedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeFinishedViewModel.swift; sourceTree = "<group>"; };
+		46834D7E24C9C58300BAF1DA /* ChallengeFinishedViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeFinishedViewControllerFactory.swift; sourceTree = "<group>"; };
+		46834D8024C9C58300BAF1DA /* ChallengeFinishedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeFinishedInteractor.swift; sourceTree = "<group>"; };
+		46834D8124C9C58300BAF1DA /* ChallengeFinishedRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeFinishedRequest.swift; sourceTree = "<group>"; };
+		46834D8324C9C58300BAF1DA /* ChallengeFinishedRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeFinishedRouter.swift; sourceTree = "<group>"; };
+		46834D8924C9C58300BAF1DA /* ChallengeDetailsViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeDetailsViewModelMapper.swift; sourceTree = "<group>"; };
+		46834D8A24C9C58300BAF1DA /* ChallengePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengePresenter.swift; sourceTree = "<group>"; };
+		46834D8B24C9C58300BAF1DA /* ChallengeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeResponse.swift; sourceTree = "<group>"; };
+		46834D8D24C9C58300BAF1DA /* ChallengeBannerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeBannerTableViewCell.swift; sourceTree = "<group>"; };
+		46834D8E24C9C58300BAF1DA /* ChallengeButtonsTableViewCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeButtonsTableViewCellDelegate.swift; sourceTree = "<group>"; };
+		46834D8F24C9C58300BAF1DA /* ChallengeDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeDetailsViewModel.swift; sourceTree = "<group>"; };
+		46834D9024C9C58300BAF1DA /* ChallengeButtonsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeButtonsTableViewCell.swift; sourceTree = "<group>"; };
+		46834D9124C9C58300BAF1DA /* ChallengeInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeInfoTableViewCell.swift; sourceTree = "<group>"; };
+		46834D9224C9C58300BAF1DA /* ChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeViewController.swift; sourceTree = "<group>"; };
+		46834D9324C9C58300BAF1DA /* ChallengeViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeViewControllerFactory.swift; sourceTree = "<group>"; };
+		46834D9524C9C58300BAF1DA /* ChallengeRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeRequest.swift; sourceTree = "<group>"; };
+		46834D9624C9C58300BAF1DA /* ChallengeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeInteractor.swift; sourceTree = "<group>"; };
+		46834D9824C9C58300BAF1DA /* ChallengeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeRouter.swift; sourceTree = "<group>"; };
+		46834D9C24C9C58300BAF1DA /* ScannerViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewControllerFactory.swift; sourceTree = "<group>"; };
+		46834D9D24C9C58300BAF1DA /* ScannerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerError.swift; sourceTree = "<group>"; };
+		46834D9E24C9C58300BAF1DA /* ScannerViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewControllerDelegate.swift; sourceTree = "<group>"; };
+		46834D9F24C9C58300BAF1DA /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		46834DA424C9C58300BAF1DA /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		46834DA524C9C58300BAF1DA /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		46834DA724C9C58300BAF1DA /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		46834DA824C9C58300BAF1DA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		46834DA924C9C58300BAF1DA /* LoginViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerFactory.swift; sourceTree = "<group>"; };
+		46834DAB24C9C58300BAF1DA /* LoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		46834DAC24C9C58300BAF1DA /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		46834DAE24C9C58300BAF1DA /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		46834DB324C9C58300BAF1DA /* OnboardingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
+		46834DB524C9C58300BAF1DA /* OnboardingInstructionCardContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingInstructionCardContentView.swift; sourceTree = "<group>"; };
+		46834DB624C9C58300BAF1DA /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		46834DB724C9C58300BAF1DA /* OnboardingInstructionCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingInstructionCardView.swift; sourceTree = "<group>"; };
+		46834DB824C9C58300BAF1DA /* OnboardingViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewControllerFactory.swift; sourceTree = "<group>"; };
+		46834DB924C9C58300BAF1DA /* OnboardingInstructionCardContentViewPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingInstructionCardContentViewPresentable.swift; sourceTree = "<group>"; };
+		46834DBA24C9C58300BAF1DA /* OnboardingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		46834DBC24C9C58300BAF1DA /* OnboardingInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingInteractor.swift; sourceTree = "<group>"; };
+		46834DBD24C9C58300BAF1DA /* OnboardingRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingRequest.swift; sourceTree = "<group>"; };
+		46834DBF24C9C58300BAF1DA /* OnboardingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingRouter.swift; sourceTree = "<group>"; };
+		46834DC424C9C58300BAF1DA /* ChallengeActiveResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeActiveResponse.swift; sourceTree = "<group>"; };
+		46834DC524C9C58300BAF1DA /* ChallengeActivePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeActivePresenter.swift; sourceTree = "<group>"; };
+		46834DC724C9C58300BAF1DA /* ChallengeActiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeActiveViewController.swift; sourceTree = "<group>"; };
+		46834DC824C9C58300BAF1DA /* ChallengeActiveViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeActiveViewControllerFactory.swift; sourceTree = "<group>"; };
+		46834DCA24C9C58300BAF1DA /* ChallengeActiveRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeActiveRequest.swift; sourceTree = "<group>"; };
+		46834DCB24C9C58300BAF1DA /* ChallengeActiveInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeActiveInteractor.swift; sourceTree = "<group>"; };
+		46834DCD24C9C58300BAF1DA /* ChallengeActiveRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeActiveRouter.swift; sourceTree = "<group>"; };
+		46834DD024C9C58300BAF1DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46834DD524C9C58300BAF1DA /* InteractiveDiscardCardAnimatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveDiscardCardAnimatorDelegate.swift; sourceTree = "<group>"; };
+		46834DD624C9C58300BAF1DA /* CardStackerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStackerDelegate.swift; sourceTree = "<group>"; };
+		46834DD724C9C58300BAF1DA /* InteractiveDiscardCardAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveDiscardCardAnimator.swift; sourceTree = "<group>"; };
+		46834DD824C9C58300BAF1DA /* CardStacker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStacker.swift; sourceTree = "<group>"; };
+		46834DD924C9C58300BAF1DA /* CardStackable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStackable.swift; sourceTree = "<group>"; };
+		46834DDB24C9C58300BAF1DA /* PresentCardsAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentCardsAnimator.swift; sourceTree = "<group>"; };
+		46834DDC24C9C58300BAF1DA /* InteractiveDrawCardAnimatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveDrawCardAnimatorDelegate.swift; sourceTree = "<group>"; };
+		46834DDD24C9C58300BAF1DA /* CardSpreader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSpreader.swift; sourceTree = "<group>"; };
+		46834DDE24C9C58300BAF1DA /* InteractiveOpenCardAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveOpenCardAnimator.swift; sourceTree = "<group>"; };
+		46834DDF24C9C58300BAF1DA /* InteractiveOpenCardAnimatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveOpenCardAnimatorDelegate.swift; sourceTree = "<group>"; };
+		46834DE024C9C58300BAF1DA /* CardDealerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDealerDelegate.swift; sourceTree = "<group>"; };
+		46834DE124C9C58300BAF1DA /* DealingContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealingContext.swift; sourceTree = "<group>"; };
+		46834DE224C9C58300BAF1DA /* RetractCardsAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetractCardsAnimator.swift; sourceTree = "<group>"; };
+		46834DE324C9C58300BAF1DA /* InteractiveDrawCardAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveDrawCardAnimator.swift; sourceTree = "<group>"; };
+		46834DE424C9C58300BAF1DA /* InteractiveCloseCardAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveCloseCardAnimator.swift; sourceTree = "<group>"; };
+		46834DE524C9C58300BAF1DA /* InteractiveCloseCardAnimatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveCloseCardAnimatorDelegate.swift; sourceTree = "<group>"; };
+		46834DE624C9C58300BAF1DA /* InteractiveReturnCardAnimatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveReturnCardAnimatorDelegate.swift; sourceTree = "<group>"; };
+		46834DE724C9C58300BAF1DA /* CardDealer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDealer.swift; sourceTree = "<group>"; };
+		46834DE824C9C58300BAF1DA /* InteractiveReturnCardAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveReturnCardAnimator.swift; sourceTree = "<group>"; };
+		46834DE924C9C58300BAF1DA /* CardDealable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDealable.swift; sourceTree = "<group>"; };
+		46834DEA24C9C58300BAF1DA /* DealingTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealingTable.swift; sourceTree = "<group>"; };
+		46834DEC24C9C58300BAF1DA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		46834DED24C9C58300BAF1DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46834DEF24C9C58300BAF1DA /* CircularStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Book.otf"; sourceTree = "<group>"; };
+		46834DF024C9C58300BAF1DA /* CircularStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Black.otf"; sourceTree = "<group>"; };
+		46834DF124C9C58300BAF1DA /* CircularStd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Bold.otf"; sourceTree = "<group>"; };
+		46834DF224C9C58300BAF1DA /* CircularStd-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-BookItalic.otf"; sourceTree = "<group>"; };
+		46834DF324C9C58300BAF1DA /* CircularStd-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-BlackItalic.otf"; sourceTree = "<group>"; };
+		46834DF424C9C58300BAF1DA /* CircularStd-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-BoldItalic.otf"; sourceTree = "<group>"; };
+		46834DF524C9C58300BAF1DA /* CircularStd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Medium.otf"; sourceTree = "<group>"; };
+		46834DF724C9C58300BAF1DA /* CardDisplayLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDisplayLogic.swift; sourceTree = "<group>"; };
+		46834DF824C9C58300BAF1DA /* ConfigurableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableView.swift; sourceTree = "<group>"; };
+		46834DFA24C9C58300BAF1DA /* ChallengeBannerViewPresentableMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeBannerViewPresentableMapper.swift; sourceTree = "<group>"; };
+		46834DFD24C9C58300BAF1DA /* ChallengeInfoPresentableMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeInfoPresentableMapper.swift; sourceTree = "<group>"; };
+		46834DFE24C9C58300BAF1DA /* ChallengeCardContentViewModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeCardContentViewModelMapper.swift; sourceTree = "<group>"; };
+		46834E0024C9C58300BAF1DA /* CGFloat+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Helper.swift"; sourceTree = "<group>"; };
+		46834E0124C9C58300BAF1DA /* UIView+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Helper.swift"; sourceTree = "<group>"; };
+		46834E0224C9C58300BAF1DA /* UIViewControllerContextTransitioning+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewControllerContextTransitioning+Helper.swift"; sourceTree = "<group>"; };
+		46834E0324C9C58300BAF1DA /* String+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Helper.swift"; sourceTree = "<group>"; };
+		46834E0624C9C58300BAF1DA /* CardCloseCollapseAnimatableContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCloseCollapseAnimatableContext.swift; sourceTree = "<group>"; };
+		46834E0724C9C58300BAF1DA /* MaskCollapseAnimatableContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskCollapseAnimatableContext.swift; sourceTree = "<group>"; };
+		46834E0824C9C58300BAF1DA /* MaskCollapseNavigationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskCollapseNavigationAnimator.swift; sourceTree = "<group>"; };
+		46834E0924C9C58300BAF1DA /* CardOpenExpandAnimatableContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardOpenExpandAnimatableContext.swift; sourceTree = "<group>"; };
+		46834E0A24C9C58300BAF1DA /* CardExpandNavigationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardExpandNavigationAnimator.swift; sourceTree = "<group>"; };
+		46834E0B24C9C58300BAF1DA /* ModalPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalPresentationController.swift; sourceTree = "<group>"; };
+		46834E0C24C9C58300BAF1DA /* MaskExpandAnimatableContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskExpandAnimatableContext.swift; sourceTree = "<group>"; };
+		46834E0D24C9C58300BAF1DA /* CardCollapseAnimatableContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCollapseAnimatableContext.swift; sourceTree = "<group>"; };
+		46834E0E24C9C58300BAF1DA /* CardOpenExpandNavigationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardOpenExpandNavigationAnimator.swift; sourceTree = "<group>"; };
+		46834E0F24C9C58300BAF1DA /* CardExpandAnimatableContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardExpandAnimatableContext.swift; sourceTree = "<group>"; };
+		46834E1024C9C58300BAF1DA /* CardCloseCollapseNavigationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCloseCollapseNavigationAnimator.swift; sourceTree = "<group>"; };
+		46834E1124C9C58300BAF1DA /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		46834E1224C9C58300BAF1DA /* MaskExpandNavigationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskExpandNavigationAnimator.swift; sourceTree = "<group>"; };
+		46834E1324C9C58300BAF1DA /* CardCollapseNavigationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCollapseNavigationAnimator.swift; sourceTree = "<group>"; };
+		46834E1624C9C58300BAF1DA /* SimpleCardContentViewPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCardContentViewPresentable.swift; sourceTree = "<group>"; };
+		46834E1724C9C58300BAF1DA /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		46834E1824C9C58300BAF1DA /* CardDeckView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDeckView.swift; sourceTree = "<group>"; };
+		46834E1924C9C58300BAF1DA /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		46834E1A24C9C58300BAF1DA /* SimpleCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCardView.swift; sourceTree = "<group>"; };
+		46834E1B24C9C58300BAF1DA /* CardContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardContentView.swift; sourceTree = "<group>"; };
+		46834E1C24C9C58300BAF1DA /* SimpleCardContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCardContentView.swift; sourceTree = "<group>"; };
+		46834E1D24C9C58300BAF1DA /* VideoPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPreviewView.swift; sourceTree = "<group>"; };
+		46834E1F24C9C58300BAF1DA /* ChallengeInfoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeInfoViewModel.swift; sourceTree = "<group>"; };
+		46834E2024C9C58300BAF1DA /* ChallengeInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeInfoView.swift; sourceTree = "<group>"; };
+		46834E2124C9C58300BAF1DA /* ChallengeInfoPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeInfoPresentable.swift; sourceTree = "<group>"; };
+		46834E2224C9C58300BAF1DA /* GHButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GHButton.swift; sourceTree = "<group>"; };
+		46834E2324C9C58300BAF1DA /* ScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
+		46834E2424C9C58300BAF1DA /* GHDiscreteSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GHDiscreteSlider.swift; sourceTree = "<group>"; };
+		46834E2624C9C58300BAF1DA /* ChallengeVideoBannerViewPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeVideoBannerViewPresentable.swift; sourceTree = "<group>"; };
+		46834E2724C9C58300BAF1DA /* ChallengeVideoBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeVideoBannerView.swift; sourceTree = "<group>"; };
+		46834E2824C9C58300BAF1DA /* ChallengeImageBannerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeImageBannerViewModel.swift; sourceTree = "<group>"; };
+		46834E2924C9C58300BAF1DA /* ChallengeQuoteBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeQuoteBannerView.swift; sourceTree = "<group>"; };
+		46834E2A24C9C58300BAF1DA /* ChallengeImageBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeImageBannerView.swift; sourceTree = "<group>"; };
+		46834E2B24C9C58300BAF1DA /* ChallengeQuoteBannerViewPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeQuoteBannerViewPresentable.swift; sourceTree = "<group>"; };
+		46834E2C24C9C58300BAF1DA /* ChallengeBannerViewPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeBannerViewPresentable.swift; sourceTree = "<group>"; };
+		46834E2D24C9C58300BAF1DA /* ChallengeImageBannerViewPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeImageBannerViewPresentable.swift; sourceTree = "<group>"; };
+		46834E2E24C9C58300BAF1DA /* ChallengeQuoteBannerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeQuoteBannerViewModel.swift; sourceTree = "<group>"; };
+		46834E2F24C9C58300BAF1DA /* ChallengeVideoBannerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeVideoBannerViewModel.swift; sourceTree = "<group>"; };
+		46834E3124C9C58300BAF1DA /* ChallengeFrontSideCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeFrontSideCardView.swift; sourceTree = "<group>"; };
+		46834E3224C9C58300BAF1DA /* ChallengeBackSideCardContentViewPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeBackSideCardContentViewPresentable.swift; sourceTree = "<group>"; };
+		46834E3324C9C58300BAF1DA /* ChallengeBackSideCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeBackSideCardView.swift; sourceTree = "<group>"; };
+		46834E3424C9C58300BAF1DA /* ChallengeFrontSideCardContentViewPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeFrontSideCardContentViewPresentable.swift; sourceTree = "<group>"; };
+		46834E3524C9C58300BAF1DA /* ChallengeBackSideCardContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeBackSideCardContentView.swift; sourceTree = "<group>"; };
+		46834E3624C9C58300BAF1DA /* ChallengeFrontSideCardContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeFrontSideCardContentView.swift; sourceTree = "<group>"; };
+		46834E3724C9C58300BAF1DA /* GHChevronButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GHChevronButton.swift; sourceTree = "<group>"; };
+		46834E3924C9C58300BAF1DA /* InfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		46834E3A24C9C58300BAF1DA /* InfoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewModel.swift; sourceTree = "<group>"; };
+		46834E3B24C9C58300BAF1DA /* InfoViewPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewPresentable.swift; sourceTree = "<group>"; };
+		46834E3F24C9C58300BAF1DA /* StyleGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
+		46834E4024C9C58300BAF1DA /* StyleGuide+Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleGuide+Fonts.swift"; sourceTree = "<group>"; };
+		46834E4124C9C58300BAF1DA /* StyleGuide+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleGuide+Layout.swift"; sourceTree = "<group>"; };
+		46834E4224C9C58300BAF1DA /* StyleGuide+Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleGuide+Colors.swift"; sourceTree = "<group>"; };
+		46834F5924C9C93600BAF1DA /* LoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
+		46834F5B24C9C9C700BAF1DA /* FirstRunWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRunWorker.swift; sourceTree = "<group>"; };
+		46834F5D24C9CA5B00BAF1DA /* CheckOnboardingShownWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOnboardingShownWorker.swift; sourceTree = "<group>"; };
+		46834F6024C9D28C00BAF1DA /* GetDailyChallengesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDailyChallengesWorker.swift; sourceTree = "<group>"; };
+		46834F6924C9F43100BAF1DA /* ActivateDailyChallengeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivateDailyChallengeWorker.swift; sourceTree = "<group>"; };
+		46834F6B24CA002400BAF1DA /* UIColor+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Helper.swift"; sourceTree = "<group>"; };
+		46834F7024CA050900BAF1DA /* SubmitReflectionAnswersWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitReflectionAnswersWorker.swift; sourceTree = "<group>"; };
+		46834F7324CA05B200BAF1DA /* SetOnboardingShownWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetOnboardingShownWorker.swift; sourceTree = "<group>"; };
+		46834F7724CA078100BAF1DA /* SubmitChallengeAnswersWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitChallengeAnswersWorker.swift; sourceTree = "<group>"; };
+		46834F7A24CA07F300BAF1DA /* UITableView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Helper.swift"; sourceTree = "<group>"; };
+		46834F7D24CA0A1F00BAF1DA /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
+		46834F7F24CA0A6400BAF1DA /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		46834F8124CA0A9200BAF1DA /* BannerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerType.swift; sourceTree = "<group>"; };
+		46834F8324CA0ABC00BAF1DA /* AdditionalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalInfo.swift; sourceTree = "<group>"; };
+		46834F8524CA0AE200BAF1DA /* Assignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
+		46834F8724CA0B0200BAF1DA /* SelectOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectOption.swift; sourceTree = "<group>"; };
+		46834F8924CA0B3700BAF1DA /* ChallengeProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeProgram.swift; sourceTree = "<group>"; };
+		46834F8B24CA0B6E00BAF1DA /* ReflectionAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionAnswer.swift; sourceTree = "<group>"; };
+		46834F8D24CA0BAA00BAF1DA /* Array+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Helper.swift"; sourceTree = "<group>"; };
+		46834F9024CA0C1700BAF1DA /* GetChallengeProgramsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetChallengeProgramsWorker.swift; sourceTree = "<group>"; };
+		46834F9224CA0C5E00BAF1DA /* AppSessionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSessionWorker.swift; sourceTree = "<group>"; };
+		46834F9524CA0D3A00BAF1DA /* CardDeckEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDeckEntity.swift; sourceTree = "<group>"; };
+		46834F9624CA0D3A00BAF1DA /* KeywordEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeywordEntity.swift; sourceTree = "<group>"; };
+		46834F9724CA0D3A00BAF1DA /* QuizCardEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizCardEntity.swift; sourceTree = "<group>"; };
+		46834F9824CA0D3A00BAF1DA /* ReflectionQuestionEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReflectionQuestionEntity.swift; sourceTree = "<group>"; };
+		46834F9924CA0D3A00BAF1DA /* SelectOptionEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectOptionEntity.swift; sourceTree = "<group>"; };
+		46834F9A24CA0D3A00BAF1DA /* ChallengeElementEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeElementEntity.swift; sourceTree = "<group>"; };
+		46834F9B24CA0D3A00BAF1DA /* ChallengeElementTypeEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeElementTypeEntity.swift; sourceTree = "<group>"; };
+		46834F9C24CA0D3B00BAF1DA /* AppSessionResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSessionResponse.swift; sourceTree = "<group>"; };
+		46834F9D24CA0D3B00BAF1DA /* ChallengeCardEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeCardEntity.swift; sourceTree = "<group>"; };
+		46834F9E24CA0D3B00BAF1DA /* ActivateDailyChallengeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivateDailyChallengeResponse.swift; sourceTree = "<group>"; };
+		46834F9F24CA0D3B00BAF1DA /* DailyChallengeEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyChallengeEntity.swift; sourceTree = "<group>"; };
+		46834FA024CA0D3B00BAF1DA /* ActivateDailyChallengePayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivateDailyChallengePayload.swift; sourceTree = "<group>"; };
+		46834FAD24CA0E8700BAF1DA /* AssignmentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentType.swift; sourceTree = "<group>"; };
+		46834FAF24CA0EDC00BAF1DA /* UIStackView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Helper.swift"; sourceTree = "<group>"; };
+		46834FB124CA12B200BAF1DA /* ChallengeProgramsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeProgramsMapper.swift; sourceTree = "<group>"; };
+		46834FB424CA1AEB00BAF1DA /* UIScrollView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Helper.swift"; sourceTree = "<group>"; };
+		46834FB624CA1C7300BAF1DA /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = SOURCE_ROOT; };
+		46834FB724CA1C7300BAF1DA /* EasyPeasy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EasyPeasy.framework; path = Carthage/Build/iOS/EasyPeasy.framework; sourceTree = SOURCE_ROOT; };
+		46834FB824CA1C7300BAF1DA /* SwiftKeychainWrapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftKeychainWrapper.framework; path = Carthage/Build/iOS/SwiftKeychainWrapper.framework; sourceTree = SOURCE_ROOT; };
+		46834FBD24CA227300BAF1DA /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		46834FBF24CA22E800BAF1DA /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		46834FC324CA25CD00BAF1DA /* JsonProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonProvider.swift; sourceTree = "<group>"; };
+		46834FC624CA268500BAF1DA /* AppSession.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AppSession.json; sourceTree = "<group>"; };
+		46834FC724CA268500BAF1DA /* AppDailyChallenge_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AppDailyChallenge_1.json; sourceTree = "<group>"; };
+		46834FC824CA268500BAF1DA /* AppDailyChallenge_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AppDailyChallenge_2.json; sourceTree = "<group>"; };
+		46834FC924CA268500BAF1DA /* AppDailyChallenge_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AppDailyChallenge_3.json; sourceTree = "<group>"; };
+		46834FCA24CA268500BAF1DA /* ActivateDailyChallenge.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ActivateDailyChallenge.json; sourceTree = "<group>"; };
+		46834FCB24CA268500BAF1DA /* AppDailyChallenge_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AppDailyChallenge_0.json; sourceTree = "<group>"; };
+		46834FD224CA2E7100BAF1DA /* GetChallengesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetChallengesWorker.swift; sourceTree = "<group>"; };
+		46834FD524CA2F8E00BAF1DA /* ChallengeMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeMapper.swift; sourceTree = "<group>"; };
+		46834FD724CA316700BAF1DA /* BannerMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerMapper.swift; sourceTree = "<group>"; };
+		46834FD924CA31B600BAF1DA /* BannerTypeMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerTypeMapper.swift; sourceTree = "<group>"; };
+		46834FDB24CA31F400BAF1DA /* AdditionalInfoMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalInfoMapper.swift; sourceTree = "<group>"; };
+		46834FDD24CA322200BAF1DA /* AssignmentMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentMapper.swift; sourceTree = "<group>"; };
+		46834FDF24CA325300BAF1DA /* AssignmentTypeMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentTypeMapper.swift; sourceTree = "<group>"; };
+		46834FE124CA32D800BAF1DA /* SelectOptionMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectOptionMapper.swift; sourceTree = "<group>"; };
+		46834FE324CA33FC00BAF1DA /* ChallengeStatusMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeStatusMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +639,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46834FBB24CA1C7300BAF1DA /* SwiftKeychainWrapper.framework in Frameworks */,
+				46834FB924CA1C7300BAF1DA /* Kingfisher.framework in Frameworks */,
+				46834FBA24CA1C7300BAF1DA /* EasyPeasy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +667,1167 @@
 		46834CB524C9C48900BAF1DA /* Action */ = {
 			isa = PBXGroup;
 			children = (
-				46834CB624C9C48900BAF1DA /* AppDelegate.swift */,
-				46834CB824C9C48900BAF1DA /* SceneDelegate.swift */,
-				46834CBA24C9C48900BAF1DA /* ViewController.swift */,
-				46834CBC24C9C48900BAF1DA /* Main.storyboard */,
-				46834CBF24C9C48A00BAF1DA /* Assets.xcassets */,
-				46834CC124C9C48A00BAF1DA /* LaunchScreen.storyboard */,
 				46834CC424C9C48A00BAF1DA /* Info.plist */,
+				46834CB624C9C48900BAF1DA /* AppDelegate.swift */,
+				46834DCE24C9C58300BAF1DA /* Base.lproj */,
+				46834DD324C9C58300BAF1DA /* CardDealAnimations */,
+				46834F9424CA0CE700BAF1DA /* DataTransferObjects */,
+				46834F7C24CA099500BAF1DA /* DomainObjects */,
+				46834DFF24C9C58300BAF1DA /* Extensions */,
+				46834F6324C9F1F000BAF1DA /* Frameworks */,
+				46834DF924C9C58300BAF1DA /* Helpers */,
+				46834FBC24CA223700BAF1DA /* Networking */,
+				46834DF624C9C58300BAF1DA /* Protocols */,
+				46834DEB24C9C58300BAF1DA /* Resources */,
+				46834CCB24C9C58200BAF1DA /* Scene */,
+				46834E0424C9C58300BAF1DA /* UIComponents */,
+				46834E3C24C9C58300BAF1DA /* Utilities */,
 			);
 			path = Action;
+			sourceTree = "<group>";
+		};
+		46834CCB24C9C58200BAF1DA /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				46834D8424C9C58300BAF1DA /* Challenge */,
+				46834DC024C9C58300BAF1DA /* ChallengeActive */,
+				46834D7224C9C58300BAF1DA /* ChallengeFinished */,
+				46834CDC24C9C58200BAF1DA /* ChallengeProgram */,
+				46834CF024C9C58200BAF1DA /* ChallengeProgramInfo */,
+				46834D3324C9C58200BAF1DA /* ChallengePrograms */,
+				46834D4B24C9C58200BAF1DA /* ChallengeReflection */,
+				46834D6224C9C58300BAF1DA /* ChallengesAvailable */,
+				46834CCC24C9C58200BAF1DA /* ChallengeSelection */,
+				46834D0324C9C58200BAF1DA /* Launch */,
+				46834DA024C9C58300BAF1DA /* Login */,
+				46834DAF24C9C58300BAF1DA /* Onboarding */,
+				46834D1024C9C58200BAF1DA /* Quiz */,
+				46834D9924C9C58300BAF1DA /* Scanner */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		46834CCC24C9C58200BAF1DA /* ChallengeSelection */ = {
+			isa = PBXGroup;
+			children = (
+				46834CD624C9C58200BAF1DA /* Interactor */,
+				46834CCF24C9C58200BAF1DA /* Presenter */,
+				46834CDA24C9C58200BAF1DA /* Router */,
+				46834CD224C9C58200BAF1DA /* View */,
+			);
+			path = ChallengeSelection;
+			sourceTree = "<group>";
+		};
+		46834CCF24C9C58200BAF1DA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				46834CD024C9C58200BAF1DA /* ChallengeSelectionPresenter.swift */,
+				46834CD124C9C58200BAF1DA /* ChallengeSelectionResponse.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		46834CD224C9C58200BAF1DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46834CD424C9C58200BAF1DA /* ChallengeSelectionChildViewController.swift */,
+				46834CD324C9C58200BAF1DA /* ChallengeSelectionViewController.swift */,
+				46834CD524C9C58200BAF1DA /* ChallengeSelectionViewControllerFactory.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		46834CD624C9C58200BAF1DA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				46834CD924C9C58200BAF1DA /* ChallengeSelectionInteractor.swift */,
+				46834CD824C9C58200BAF1DA /* ChallengeSelectionRequest.swift */,
+				46834CD724C9C58200BAF1DA /* ChallengeStatusTransitioningDelegate.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		46834CDA24C9C58200BAF1DA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				46834CDB24C9C58200BAF1DA /* ChallengeSelectionRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		46834CDC24C9C58200BAF1DA /* ChallengeProgram */ = {
+			isa = PBXGroup;
+			children = (
+				46834CEB24C9C58200BAF1DA /* Interactor */,
+				46834CDF24C9C58200BAF1DA /* Presenter */,
+				46834CEE24C9C58200BAF1DA /* Router */,
+				46834CE224C9C58200BAF1DA /* View */,
+			);
+			path = ChallengeProgram;
+			sourceTree = "<group>";
+		};
+		46834CDF24C9C58200BAF1DA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				46834CE024C9C58200BAF1DA /* ChallengeProgramPresenter.swift */,
+				46834CE124C9C58200BAF1DA /* ChallengeProgramResponse.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		46834CE224C9C58200BAF1DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46834CE424C9C58200BAF1DA /* ChallengeProgramContentViewPresentable.swift */,
+				46834CE524C9C58200BAF1DA /* ChallengeProgramLargeCardContentView.swift */,
+				46834CE324C9C58200BAF1DA /* ChallengeProgramLargeContentView.swift */,
+				46834CE624C9C58200BAF1DA /* ChallengeProgramSmallCardContentView.swift */,
+				46834CE924C9C58200BAF1DA /* ChallengeProgramSmallContentView.swift */,
+				46834CE724C9C58200BAF1DA /* ChallengeProgramViewController.swift */,
+				46834CEA24C9C58200BAF1DA /* ChallengeProgramViewControllerFactory.swift */,
+				46834CE824C9C58200BAF1DA /* ChallengeProgramViewModel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		46834CEB24C9C58200BAF1DA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				46834CEC24C9C58200BAF1DA /* ChallengeProgramInteractor.swift */,
+				46834CED24C9C58200BAF1DA /* ChallengeProgramRequest.swift */,
+				46834FD424CA2F6E00BAF1DA /* Mapper */,
+				46834F5F24C9D25900BAF1DA /* Workers */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		46834CEE24C9C58200BAF1DA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				46834CEF24C9C58200BAF1DA /* ChallengeProgramRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		46834CF024C9C58200BAF1DA /* ChallengeProgramInfo */ = {
+			isa = PBXGroup;
+			children = (
+				46834CFE24C9C58200BAF1DA /* Interactor */,
+				46834CF324C9C58200BAF1DA /* Presenter */,
+				46834D0124C9C58200BAF1DA /* Router */,
+				46834CF824C9C58200BAF1DA /* View */,
+			);
+			path = ChallengeProgramInfo;
+			sourceTree = "<group>";
+		};
+		46834CF324C9C58200BAF1DA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				46834CF424C9C58200BAF1DA /* ChallengeProgramInfoPresenter.swift */,
+				46834CF724C9C58200BAF1DA /* ChallengeProgramInfoResponse.swift */,
+				46834CF524C9C58200BAF1DA /* Mapper */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		46834CF524C9C58200BAF1DA /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				46834CF624C9C58200BAF1DA /* ChallengeProgramInfoViewModelMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		46834CF824C9C58200BAF1DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46834CF924C9C58200BAF1DA /* ChallengeProgramInfoView.swift */,
+				46834CFC24C9C58200BAF1DA /* ChallengeProgramInfoViewController.swift */,
+				46834CFA24C9C58200BAF1DA /* ChallengeProgramInfoViewControllerFactory.swift */,
+				46834CFD24C9C58200BAF1DA /* ChallengeProgramInfoViewModel.swift */,
+				46834CFB24C9C58200BAF1DA /* ChallengeProgramInfoViewPresentable.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		46834CFE24C9C58200BAF1DA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				46834D0024C9C58200BAF1DA /* ChallengeProgramInfoInteractor.swift */,
+				46834CFF24C9C58200BAF1DA /* ChallengeProgramInfoRequest.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		46834D0124C9C58200BAF1DA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				46834D0224C9C58200BAF1DA /* ChallengeProgramInfoRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		46834D0324C9C58200BAF1DA /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				46834D0B24C9C58200BAF1DA /* Interactor */,
+				46834D0624C9C58200BAF1DA /* Presenter */,
+				46834D0E24C9C58200BAF1DA /* Router */,
+				46834D0824C9C58200BAF1DA /* View */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		46834D0624C9C58200BAF1DA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				46834D0724C9C58200BAF1DA /* LaunchPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		46834D0824C9C58200BAF1DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46834D0924C9C58200BAF1DA /* LaunchViewController.swift */,
+				46834D0A24C9C58200BAF1DA /* LaunchViewControllerFactory.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		46834D0B24C9C58200BAF1DA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				46834D0C24C9C58200BAF1DA /* LaunchInteractor.swift */,
+				46834D0D24C9C58200BAF1DA /* LaunchRequest.swift */,
+				46834F5824C9C8F600BAF1DA /* Workers */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		46834D0E24C9C58200BAF1DA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				46834D0F24C9C58200BAF1DA /* LaunchRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		46834D1024C9C58200BAF1DA /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				46834D2E24C9C58200BAF1DA /* Interactor */,
+				46834D1324C9C58200BAF1DA /* Presenter */,
+				46834D3124C9C58200BAF1DA /* Router */,
+				46834D1524C9C58200BAF1DA /* View */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		46834D1324C9C58200BAF1DA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				46834D1424C9C58200BAF1DA /* QuizPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		46834D1524C9C58200BAF1DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46834D2B24C9C58200BAF1DA /* QuizAnswersTableViewCell.swift */,
+				46834D1624C9C58200BAF1DA /* QuizAnswersViewPresentable.swift */,
+				46834D2A24C9C58200BAF1DA /* QuizAnswersViewPresentableItem.swift */,
+				46834D2C24C9C58200BAF1DA /* QuizCardContentView.swift */,
+				46834D2324C9C58200BAF1DA /* QuizCardContentViewPresentable.swift */,
+				46834D2224C9C58200BAF1DA /* QuizCardContentViewPresentableItem.swift */,
+				46834D2524C9C58200BAF1DA /* QuizCardView.swift */,
+				46834D1E24C9C58200BAF1DA /* QuizExplanationTableViewCell.swift */,
+				46834D2424C9C58200BAF1DA /* QuizExplanationViewPresentable.swift */,
+				46834D1A24C9C58200BAF1DA /* QuizFeedbackCardContentView.swift */,
+				46834D1B24C9C58200BAF1DA /* QuizFeedbackCardView.swift */,
+				46834D2D24C9C58200BAF1DA /* QuizFeedbackContentViewPresentable.swift */,
+				46834D2624C9C58200BAF1DA /* QuizFeedbackContentViewPresentableItem.swift */,
+				46834D1724C9C58200BAF1DA /* QuizFeedbackTableViewCell.swift */,
+				46834D2924C9C58200BAF1DA /* QuizFeedbackViewPresentable.swift */,
+				46834D2824C9C58200BAF1DA /* QuizMoreInfoTableViewCell.swift */,
+				46834D1F24C9C58200BAF1DA /* QuizQuestionTableViewCell.swift */,
+				46834D1C24C9C58200BAF1DA /* QuizQuestionViewPresentable.swift */,
+				46834D2024C9C58200BAF1DA /* QuizSubmitView.swift */,
+				46834D2124C9C58200BAF1DA /* QuizTitleTableViewCell.swift */,
+				46834D1824C9C58200BAF1DA /* QuizTitleViewPresentable.swift */,
+				46834D1D24C9C58200BAF1DA /* QuizViewController.swift */,
+				46834D2724C9C58200BAF1DA /* QuizViewControllerFactory.swift */,
+				46834D1924C9C58200BAF1DA /* QuizViewModel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		46834D2E24C9C58200BAF1DA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				46834D2F24C9C58200BAF1DA /* QuizRequest.swift */,
+				46834D3024C9C58200BAF1DA /* QuizInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		46834D3124C9C58200BAF1DA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				46834D3224C9C58200BAF1DA /* QuizRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		46834D3324C9C58200BAF1DA /* ChallengePrograms */ = {
+			isa = PBXGroup;
+			children = (
+				46834D4624C9C58200BAF1DA /* Interactor */,
+				46834D3624C9C58200BAF1DA /* Presenter */,
+				46834D4924C9C58200BAF1DA /* Router */,
+				46834D3B24C9C58200BAF1DA /* View */,
+			);
+			path = ChallengePrograms;
+			sourceTree = "<group>";
+		};
+		46834D3624C9C58200BAF1DA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				46834D3A24C9C58200BAF1DA /* ChallengeProgramsPresenter.swift */,
+				46834D3724C9C58200BAF1DA /* ChallengeProgramsResponse.swift */,
+				46834D3824C9C58200BAF1DA /* Mapper */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		46834D3824C9C58200BAF1DA /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				46834D3924C9C58200BAF1DA /* ChallengeProgramsViewModelMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		46834D3B24C9C58200BAF1DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46834D4224C9C58200BAF1DA /* ChallengeProgramCardContentView.swift */,
+				46834D4424C9C58200BAF1DA /* ChallengeProgramCardContentViewPresentable.swift */,
+				46834D3F24C9C58200BAF1DA /* ChallengeProgramCardView.swift */,
+				46834D4524C9C58200BAF1DA /* ChallengeProgramInfoCardContentView.swift */,
+				46834D3C24C9C58200BAF1DA /* ChallengeProgramInfoCardView.swift */,
+				46834D4324C9C58200BAF1DA /* ChallengeProgramsViewController.swift */,
+				46834D4124C9C58200BAF1DA /* ChallengeProgramsViewControllerFactory.swift */,
+				46834D4024C9C58200BAF1DA /* ChallengeProgramsViewModel.swift */,
+				46834D3D24C9C58200BAF1DA /* Animation */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		46834D3D24C9C58200BAF1DA /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				46834D3E24C9C58200BAF1DA /* ScrollViewPaginationHighlightCoordinator.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		46834D4624C9C58200BAF1DA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				46834D4824C9C58200BAF1DA /* ChallengeProgramsInteractor.swift */,
+				46834D4724C9C58200BAF1DA /* ChallengeProgramsRequest.swift */,
+				46834FB324CA12C500BAF1DA /* Mapper */,
+				46834F8F24CA0C0400BAF1DA /* Workers */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		46834D4924C9C58200BAF1DA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				46834D4A24C9C58200BAF1DA /* ChallengeProgramsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		46834D4B24C9C58200BAF1DA /* ChallengeReflection */ = {
+			isa = PBXGroup;
+			children = (
+				46834D5C24C9C58200BAF1DA /* Interactor */,
+				46834D4E24C9C58200BAF1DA /* Presenter */,
+				46834D6024C9C58300BAF1DA /* Router */,
+				46834D5124C9C58200BAF1DA /* View */,
+			);
+			path = ChallengeReflection;
+			sourceTree = "<group>";
+		};
+		46834D4E24C9C58200BAF1DA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				46834D4F24C9C58200BAF1DA /* ChallengeReflectionResponse.swift */,
+				46834D5024C9C58200BAF1DA /* ChallengeReflectionPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		46834D5124C9C58200BAF1DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46834D5724C9C58200BAF1DA /* ChallengeReflectionButtonsPresentable.swift */,
+				46834D5224C9C58200BAF1DA /* ChallengeReflectionButtonsTableViewCell.swift */,
+				46834D5B24C9C58200BAF1DA /* ChallengeReflectionButtonsTableViewDelegate.swift */,
+				46834D5624C9C58200BAF1DA /* ChallengeReflectionMetadataPresentable.swift */,
+				46834D5524C9C58200BAF1DA /* ChallengeReflectionMetadataTableViewCell.swift */,
+				46834D5824C9C58200BAF1DA /* ChallengeReflectionQuestionPresentable.swift */,
+				46834D5324C9C58200BAF1DA /* ChallengeReflectionQuestionTableViewCell.swift */,
+				46834D5924C9C58200BAF1DA /* ChallengeReflectionViewController.swift */,
+				46834D5A24C9C58200BAF1DA /* ChallengeReflectionViewControllerFactory.swift */,
+				46834D5424C9C58200BAF1DA /* ChallengeReflectionViewModel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		46834D5C24C9C58200BAF1DA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				46834D5D24C9C58200BAF1DA /* ChallengeReflectionDelegate.swift */,
+				46834D5E24C9C58200BAF1DA /* ChallengeReflectionInteractor.swift */,
+				46834D5F24C9C58300BAF1DA /* ChallengeReflectionRequest.swift */,
+				46834F6F24CA04FC00BAF1DA /* Workers */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		46834D6024C9C58300BAF1DA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				46834D6124C9C58300BAF1DA /* ChallengeReflectionRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		46834D6224C9C58300BAF1DA /* ChallengesAvailable */ = {
+			isa = PBXGroup;
+			children = (
+				46834D6D24C9C58300BAF1DA /* Interactor */,
+				46834D6524C9C58300BAF1DA /* Presenter */,
+				46834D7024C9C58300BAF1DA /* Router */,
+				46834D6824C9C58300BAF1DA /* View */,
+			);
+			path = ChallengesAvailable;
+			sourceTree = "<group>";
+		};
+		46834D6524C9C58300BAF1DA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				46834D6724C9C58300BAF1DA /* ChallengesAvailablePresenter.swift */,
+				46834D6624C9C58300BAF1DA /* ChallengesAvailableResponse.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		46834D6824C9C58300BAF1DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46834D6A24C9C58300BAF1DA /* ChallengeCardContentViewModel.swift */,
+				46834D6B24C9C58300BAF1DA /* ChallengesAvailableViewController.swift */,
+				46834D6C24C9C58300BAF1DA /* ChallengesAvailableViewControllerFactory.swift */,
+				46834D6924C9C58300BAF1DA /* SemiTransparentLoadingIndicatorView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		46834D6D24C9C58300BAF1DA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				46834D6E24C9C58300BAF1DA /* ChallengesAvailableInteractor.swift */,
+				46834D6F24C9C58300BAF1DA /* ChallengesAvailableRequest.swift */,
+				46834F6824C9F42200BAF1DA /* Workers */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		46834D7024C9C58300BAF1DA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				46834D7124C9C58300BAF1DA /* ChallengesAvailableRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		46834D7224C9C58300BAF1DA /* ChallengeFinished */ = {
+			isa = PBXGroup;
+			children = (
+				46834D7F24C9C58300BAF1DA /* Interactor */,
+				46834D7524C9C58300BAF1DA /* Presenter */,
+				46834D8224C9C58300BAF1DA /* Router */,
+				46834D7A24C9C58300BAF1DA /* View */,
+			);
+			path = ChallengeFinished;
+			sourceTree = "<group>";
+		};
+		46834D7524C9C58300BAF1DA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				46834D7924C9C58300BAF1DA /* ChallengeFinishedPresenter.swift */,
+				46834D7824C9C58300BAF1DA /* ChallengeFinishedResponse.swift */,
+				46834D7624C9C58300BAF1DA /* Mapper */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		46834D7624C9C58300BAF1DA /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				46834D7724C9C58300BAF1DA /* ChallengeFinishedViewModelMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		46834D7A24C9C58300BAF1DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46834D7B24C9C58300BAF1DA /* ChallengeFinishedViewController.swift */,
+				46834D7E24C9C58300BAF1DA /* ChallengeFinishedViewControllerFactory.swift */,
+				46834D7D24C9C58300BAF1DA /* ChallengeFinishedViewModel.swift */,
+				46834D7C24C9C58300BAF1DA /* ConfettiDecorator.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		46834D7F24C9C58300BAF1DA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				46834D8024C9C58300BAF1DA /* ChallengeFinishedInteractor.swift */,
+				46834D8124C9C58300BAF1DA /* ChallengeFinishedRequest.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		46834D8224C9C58300BAF1DA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				46834D8324C9C58300BAF1DA /* ChallengeFinishedRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		46834D8424C9C58300BAF1DA /* Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				46834D9424C9C58300BAF1DA /* Interactor */,
+				46834D8724C9C58300BAF1DA /* Presenter */,
+				46834D9724C9C58300BAF1DA /* Router */,
+				46834D8C24C9C58300BAF1DA /* View */,
+			);
+			path = Challenge;
+			sourceTree = "<group>";
+		};
+		46834D8724C9C58300BAF1DA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				46834D8A24C9C58300BAF1DA /* ChallengePresenter.swift */,
+				46834D8B24C9C58300BAF1DA /* ChallengeResponse.swift */,
+				46834D8824C9C58300BAF1DA /* Mapper */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		46834D8824C9C58300BAF1DA /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				46834D8924C9C58300BAF1DA /* ChallengeDetailsViewModelMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		46834D8C24C9C58300BAF1DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46834D8D24C9C58300BAF1DA /* ChallengeBannerTableViewCell.swift */,
+				46834D9024C9C58300BAF1DA /* ChallengeButtonsTableViewCell.swift */,
+				46834D8E24C9C58300BAF1DA /* ChallengeButtonsTableViewCellDelegate.swift */,
+				46834D8F24C9C58300BAF1DA /* ChallengeDetailsViewModel.swift */,
+				46834D9124C9C58300BAF1DA /* ChallengeInfoTableViewCell.swift */,
+				46834D9224C9C58300BAF1DA /* ChallengeViewController.swift */,
+				46834D9324C9C58300BAF1DA /* ChallengeViewControllerFactory.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		46834D9424C9C58300BAF1DA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				46834D9624C9C58300BAF1DA /* ChallengeInteractor.swift */,
+				46834D9524C9C58300BAF1DA /* ChallengeRequest.swift */,
+				46834F7624CA077100BAF1DA /* Workers */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		46834D9724C9C58300BAF1DA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				46834D9824C9C58300BAF1DA /* ChallengeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		46834D9924C9C58300BAF1DA /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				46834D9C24C9C58300BAF1DA /* ScannerViewControllerFactory.swift */,
+				46834D9D24C9C58300BAF1DA /* ScannerError.swift */,
+				46834D9E24C9C58300BAF1DA /* ScannerViewControllerDelegate.swift */,
+				46834D9F24C9C58300BAF1DA /* ScannerViewController.swift */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		46834DA024C9C58300BAF1DA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				46834DAA24C9C58300BAF1DA /* Interactor */,
+				46834DA324C9C58300BAF1DA /* Presenter */,
+				46834DAD24C9C58300BAF1DA /* Router */,
+				46834DA624C9C58300BAF1DA /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		46834DA324C9C58300BAF1DA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				46834DA524C9C58300BAF1DA /* LoginPresenter.swift */,
+				46834DA424C9C58300BAF1DA /* LoginResponse.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		46834DA624C9C58300BAF1DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46834DA824C9C58300BAF1DA /* LoginViewController.swift */,
+				46834DA924C9C58300BAF1DA /* LoginViewControllerFactory.swift */,
+				46834DA724C9C58300BAF1DA /* LoginViewModel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		46834DAA24C9C58300BAF1DA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				46834DAC24C9C58300BAF1DA /* LoginInteractor.swift */,
+				46834DAB24C9C58300BAF1DA /* LoginRequest.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		46834DAD24C9C58300BAF1DA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				46834DAE24C9C58300BAF1DA /* LoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		46834DAF24C9C58300BAF1DA /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				46834DBB24C9C58300BAF1DA /* Interactor */,
+				46834DB224C9C58300BAF1DA /* Presenter */,
+				46834DBE24C9C58300BAF1DA /* Router */,
+				46834DB424C9C58300BAF1DA /* View */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		46834DB224C9C58300BAF1DA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				46834DB324C9C58300BAF1DA /* OnboardingPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		46834DB424C9C58300BAF1DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46834DB524C9C58300BAF1DA /* OnboardingInstructionCardContentView.swift */,
+				46834DB924C9C58300BAF1DA /* OnboardingInstructionCardContentViewPresentable.swift */,
+				46834DB724C9C58300BAF1DA /* OnboardingInstructionCardView.swift */,
+				46834DB624C9C58300BAF1DA /* OnboardingViewController.swift */,
+				46834DB824C9C58300BAF1DA /* OnboardingViewControllerFactory.swift */,
+				46834DBA24C9C58300BAF1DA /* OnboardingViewModel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		46834DBB24C9C58300BAF1DA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				46834DBC24C9C58300BAF1DA /* OnboardingInteractor.swift */,
+				46834DBD24C9C58300BAF1DA /* OnboardingRequest.swift */,
+				46834F7224CA05A100BAF1DA /* Workers */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		46834DBE24C9C58300BAF1DA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				46834DBF24C9C58300BAF1DA /* OnboardingRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		46834DC024C9C58300BAF1DA /* ChallengeActive */ = {
+			isa = PBXGroup;
+			children = (
+				46834DC924C9C58300BAF1DA /* Interactor */,
+				46834DC324C9C58300BAF1DA /* Presenter */,
+				46834DCC24C9C58300BAF1DA /* Router */,
+				46834DC624C9C58300BAF1DA /* View */,
+			);
+			path = ChallengeActive;
+			sourceTree = "<group>";
+		};
+		46834DC324C9C58300BAF1DA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				46834DC424C9C58300BAF1DA /* ChallengeActiveResponse.swift */,
+				46834DC524C9C58300BAF1DA /* ChallengeActivePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		46834DC624C9C58300BAF1DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46834DC724C9C58300BAF1DA /* ChallengeActiveViewController.swift */,
+				46834DC824C9C58300BAF1DA /* ChallengeActiveViewControllerFactory.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		46834DC924C9C58300BAF1DA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				46834DCA24C9C58300BAF1DA /* ChallengeActiveRequest.swift */,
+				46834DCB24C9C58300BAF1DA /* ChallengeActiveInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		46834DCC24C9C58300BAF1DA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				46834DCD24C9C58300BAF1DA /* ChallengeActiveRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		46834DCE24C9C58300BAF1DA /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				46834DCF24C9C58300BAF1DA /* LaunchScreen.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		46834DD324C9C58300BAF1DA /* CardDealAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				46834DEA24C9C58300BAF1DA /* DealingTable.swift */,
+				46834DDA24C9C58300BAF1DA /* CardDealing */,
+				46834DD424C9C58300BAF1DA /* CardStacking */,
+			);
+			path = CardDealAnimations;
+			sourceTree = "<group>";
+		};
+		46834DD424C9C58300BAF1DA /* CardStacking */ = {
+			isa = PBXGroup;
+			children = (
+				46834DD924C9C58300BAF1DA /* CardStackable.swift */,
+				46834DD824C9C58300BAF1DA /* CardStacker.swift */,
+				46834DD624C9C58300BAF1DA /* CardStackerDelegate.swift */,
+				46834DD724C9C58300BAF1DA /* InteractiveDiscardCardAnimator.swift */,
+				46834DD524C9C58300BAF1DA /* InteractiveDiscardCardAnimatorDelegate.swift */,
+			);
+			path = CardStacking;
+			sourceTree = "<group>";
+		};
+		46834DDA24C9C58300BAF1DA /* CardDealing */ = {
+			isa = PBXGroup;
+			children = (
+				46834DE924C9C58300BAF1DA /* CardDealable.swift */,
+				46834DE724C9C58300BAF1DA /* CardDealer.swift */,
+				46834DE024C9C58300BAF1DA /* CardDealerDelegate.swift */,
+				46834DDD24C9C58300BAF1DA /* CardSpreader.swift */,
+				46834DE124C9C58300BAF1DA /* DealingContext.swift */,
+				46834DE424C9C58300BAF1DA /* InteractiveCloseCardAnimator.swift */,
+				46834DE524C9C58300BAF1DA /* InteractiveCloseCardAnimatorDelegate.swift */,
+				46834DE324C9C58300BAF1DA /* InteractiveDrawCardAnimator.swift */,
+				46834DDC24C9C58300BAF1DA /* InteractiveDrawCardAnimatorDelegate.swift */,
+				46834DDE24C9C58300BAF1DA /* InteractiveOpenCardAnimator.swift */,
+				46834DDF24C9C58300BAF1DA /* InteractiveOpenCardAnimatorDelegate.swift */,
+				46834DE824C9C58300BAF1DA /* InteractiveReturnCardAnimator.swift */,
+				46834DE624C9C58300BAF1DA /* InteractiveReturnCardAnimatorDelegate.swift */,
+				46834DDB24C9C58300BAF1DA /* PresentCardsAnimator.swift */,
+				46834DE224C9C58300BAF1DA /* RetractCardsAnimator.swift */,
+			);
+			path = CardDealing;
+			sourceTree = "<group>";
+		};
+		46834DEB24C9C58300BAF1DA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				46834DEC24C9C58300BAF1DA /* Localizable.strings */,
+				46834DED24C9C58300BAF1DA /* Assets.xcassets */,
+				46834FC524CA264900BAF1DA /* Files */,
+				46834DEE24C9C58300BAF1DA /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		46834DEE24C9C58300BAF1DA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				46834DEF24C9C58300BAF1DA /* CircularStd-Book.otf */,
+				46834DF024C9C58300BAF1DA /* CircularStd-Black.otf */,
+				46834DF124C9C58300BAF1DA /* CircularStd-Bold.otf */,
+				46834DF224C9C58300BAF1DA /* CircularStd-BookItalic.otf */,
+				46834DF324C9C58300BAF1DA /* CircularStd-BlackItalic.otf */,
+				46834DF424C9C58300BAF1DA /* CircularStd-BoldItalic.otf */,
+				46834DF524C9C58300BAF1DA /* CircularStd-Medium.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		46834DF624C9C58300BAF1DA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				46834DF724C9C58300BAF1DA /* CardDisplayLogic.swift */,
+				46834DF824C9C58300BAF1DA /* ConfigurableView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		46834DF924C9C58300BAF1DA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				46834DFA24C9C58300BAF1DA /* ChallengeBannerViewPresentableMapper.swift */,
+				46834DFE24C9C58300BAF1DA /* ChallengeCardContentViewModelMapper.swift */,
+				46834DFD24C9C58300BAF1DA /* ChallengeInfoPresentableMapper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		46834DFF24C9C58300BAF1DA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				46834F8D24CA0BAA00BAF1DA /* Array+Helper.swift */,
+				46834E0024C9C58300BAF1DA /* CGFloat+Helper.swift */,
+				46834E0324C9C58300BAF1DA /* String+Helper.swift */,
+				46834F6B24CA002400BAF1DA /* UIColor+Helper.swift */,
+				46834F7A24CA07F300BAF1DA /* UITableView+Helper.swift */,
+				46834E0124C9C58300BAF1DA /* UIView+Helper.swift */,
+				46834E0224C9C58300BAF1DA /* UIViewControllerContextTransitioning+Helper.swift */,
+				46834FAF24CA0EDC00BAF1DA /* UIStackView+Helper.swift */,
+				46834FB424CA1AEB00BAF1DA /* UIScrollView+Helper.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		46834E0424C9C58300BAF1DA /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				46834E0524C9C58300BAF1DA /* Navigation */,
+				46834E1424C9C58300BAF1DA /* Views */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		46834E0524C9C58300BAF1DA /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				46834E0624C9C58300BAF1DA /* CardCloseCollapseAnimatableContext.swift */,
+				46834E1024C9C58300BAF1DA /* CardCloseCollapseNavigationAnimator.swift */,
+				46834E0D24C9C58300BAF1DA /* CardCollapseAnimatableContext.swift */,
+				46834E1324C9C58300BAF1DA /* CardCollapseNavigationAnimator.swift */,
+				46834E0F24C9C58300BAF1DA /* CardExpandAnimatableContext.swift */,
+				46834E0A24C9C58300BAF1DA /* CardExpandNavigationAnimator.swift */,
+				46834E0924C9C58300BAF1DA /* CardOpenExpandAnimatableContext.swift */,
+				46834E0E24C9C58300BAF1DA /* CardOpenExpandNavigationAnimator.swift */,
+				46834E0724C9C58300BAF1DA /* MaskCollapseAnimatableContext.swift */,
+				46834E0824C9C58300BAF1DA /* MaskCollapseNavigationAnimator.swift */,
+				46834E0C24C9C58300BAF1DA /* MaskExpandAnimatableContext.swift */,
+				46834E1224C9C58300BAF1DA /* MaskExpandNavigationAnimator.swift */,
+				46834E0B24C9C58300BAF1DA /* ModalPresentationController.swift */,
+				46834E1124C9C58300BAF1DA /* NavigationController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		46834E1424C9C58300BAF1DA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				46834E2224C9C58300BAF1DA /* GHButton.swift */,
+				46834E3724C9C58300BAF1DA /* GHChevronButton.swift */,
+				46834E2424C9C58300BAF1DA /* GHDiscreteSlider.swift */,
+				46834E2324C9C58300BAF1DA /* ScrollView.swift */,
+				46834E1D24C9C58300BAF1DA /* VideoPreviewView.swift */,
+				46834E1524C9C58300BAF1DA /* Cards */,
+				46834E2524C9C58300BAF1DA /* ChallengeBanner */,
+				46834E3024C9C58300BAF1DA /* ChallengeCards */,
+				46834E1E24C9C58300BAF1DA /* ChallengeInfo */,
+				46834E3824C9C58300BAF1DA /* InfoView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		46834E1524C9C58300BAF1DA /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				46834E1924C9C58300BAF1DA /* Card.swift */,
+				46834E1B24C9C58300BAF1DA /* CardContentView.swift */,
+				46834E1824C9C58300BAF1DA /* CardDeckView.swift */,
+				46834E1724C9C58300BAF1DA /* CardView.swift */,
+				46834E1C24C9C58300BAF1DA /* SimpleCardContentView.swift */,
+				46834E1624C9C58300BAF1DA /* SimpleCardContentViewPresentable.swift */,
+				46834E1A24C9C58300BAF1DA /* SimpleCardView.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		46834E1E24C9C58300BAF1DA /* ChallengeInfo */ = {
+			isa = PBXGroup;
+			children = (
+				46834E2124C9C58300BAF1DA /* ChallengeInfoPresentable.swift */,
+				46834E2024C9C58300BAF1DA /* ChallengeInfoView.swift */,
+				46834E1F24C9C58300BAF1DA /* ChallengeInfoViewModel.swift */,
+			);
+			path = ChallengeInfo;
+			sourceTree = "<group>";
+		};
+		46834E2524C9C58300BAF1DA /* ChallengeBanner */ = {
+			isa = PBXGroup;
+			children = (
+				46834E2C24C9C58300BAF1DA /* ChallengeBannerViewPresentable.swift */,
+				46834E2A24C9C58300BAF1DA /* ChallengeImageBannerView.swift */,
+				46834E2824C9C58300BAF1DA /* ChallengeImageBannerViewModel.swift */,
+				46834E2D24C9C58300BAF1DA /* ChallengeImageBannerViewPresentable.swift */,
+				46834E2924C9C58300BAF1DA /* ChallengeQuoteBannerView.swift */,
+				46834E2E24C9C58300BAF1DA /* ChallengeQuoteBannerViewModel.swift */,
+				46834E2B24C9C58300BAF1DA /* ChallengeQuoteBannerViewPresentable.swift */,
+				46834E2724C9C58300BAF1DA /* ChallengeVideoBannerView.swift */,
+				46834E2F24C9C58300BAF1DA /* ChallengeVideoBannerViewModel.swift */,
+				46834E2624C9C58300BAF1DA /* ChallengeVideoBannerViewPresentable.swift */,
+			);
+			path = ChallengeBanner;
+			sourceTree = "<group>";
+		};
+		46834E3024C9C58300BAF1DA /* ChallengeCards */ = {
+			isa = PBXGroup;
+			children = (
+				46834E3524C9C58300BAF1DA /* ChallengeBackSideCardContentView.swift */,
+				46834E3224C9C58300BAF1DA /* ChallengeBackSideCardContentViewPresentable.swift */,
+				46834E3324C9C58300BAF1DA /* ChallengeBackSideCardView.swift */,
+				46834E3624C9C58300BAF1DA /* ChallengeFrontSideCardContentView.swift */,
+				46834E3424C9C58300BAF1DA /* ChallengeFrontSideCardContentViewPresentable.swift */,
+				46834E3124C9C58300BAF1DA /* ChallengeFrontSideCardView.swift */,
+			);
+			path = ChallengeCards;
+			sourceTree = "<group>";
+		};
+		46834E3824C9C58300BAF1DA /* InfoView */ = {
+			isa = PBXGroup;
+			children = (
+				46834E3924C9C58300BAF1DA /* InfoView.swift */,
+				46834E3A24C9C58300BAF1DA /* InfoViewModel.swift */,
+				46834E3B24C9C58300BAF1DA /* InfoViewPresentable.swift */,
+			);
+			path = InfoView;
+			sourceTree = "<group>";
+		};
+		46834E3C24C9C58300BAF1DA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				46834E3E24C9C58300BAF1DA /* StyleGuide */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		46834E3E24C9C58300BAF1DA /* StyleGuide */ = {
+			isa = PBXGroup;
+			children = (
+				46834E3F24C9C58300BAF1DA /* StyleGuide.swift */,
+				46834E4224C9C58300BAF1DA /* StyleGuide+Colors.swift */,
+				46834E4024C9C58300BAF1DA /* StyleGuide+Fonts.swift */,
+				46834E4124C9C58300BAF1DA /* StyleGuide+Layout.swift */,
+			);
+			path = StyleGuide;
+			sourceTree = "<group>";
+		};
+		46834F5824C9C8F600BAF1DA /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				46834F5D24C9CA5B00BAF1DA /* CheckOnboardingShownWorker.swift */,
+				46834F5B24C9C9C700BAF1DA /* FirstRunWorker.swift */,
+				46834F5924C9C93600BAF1DA /* LoginWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		46834F5F24C9D25900BAF1DA /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				46834F6024C9D28C00BAF1DA /* GetDailyChallengesWorker.swift */,
+				46834FD224CA2E7100BAF1DA /* GetChallengesWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		46834F6324C9F1F000BAF1DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46834FB724CA1C7300BAF1DA /* EasyPeasy.framework */,
+				46834FB624CA1C7300BAF1DA /* Kingfisher.framework */,
+				46834FB824CA1C7300BAF1DA /* SwiftKeychainWrapper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46834F6824C9F42200BAF1DA /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				46834F6924C9F43100BAF1DA /* ActivateDailyChallengeWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		46834F6F24CA04FC00BAF1DA /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				46834F7024CA050900BAF1DA /* SubmitReflectionAnswersWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		46834F7224CA05A100BAF1DA /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				46834F7324CA05B200BAF1DA /* SetOnboardingShownWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		46834F7624CA077100BAF1DA /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				46834F7724CA078100BAF1DA /* SubmitChallengeAnswersWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		46834F7C24CA099500BAF1DA /* DomainObjects */ = {
+			isa = PBXGroup;
+			children = (
+				46834F8324CA0ABC00BAF1DA /* AdditionalInfo.swift */,
+				46834F8524CA0AE200BAF1DA /* Assignment.swift */,
+				46834FAD24CA0E8700BAF1DA /* AssignmentType.swift */,
+				46834F7F24CA0A6400BAF1DA /* Banner.swift */,
+				46834F8124CA0A9200BAF1DA /* BannerType.swift */,
+				46834F7D24CA0A1F00BAF1DA /* Challenge.swift */,
+				46834F8924CA0B3700BAF1DA /* ChallengeProgram.swift */,
+				46834F8B24CA0B6E00BAF1DA /* ReflectionAnswer.swift */,
+				46834F8724CA0B0200BAF1DA /* SelectOption.swift */,
+			);
+			path = DomainObjects;
+			sourceTree = "<group>";
+		};
+		46834F8F24CA0C0400BAF1DA /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				46834F9224CA0C5E00BAF1DA /* AppSessionWorker.swift */,
+				46834F9024CA0C1700BAF1DA /* GetChallengeProgramsWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		46834F9424CA0CE700BAF1DA /* DataTransferObjects */ = {
+			isa = PBXGroup;
+			children = (
+				46834FA024CA0D3B00BAF1DA /* ActivateDailyChallengePayload.swift */,
+				46834F9E24CA0D3B00BAF1DA /* ActivateDailyChallengeResponse.swift */,
+				46834F9C24CA0D3B00BAF1DA /* AppSessionResponse.swift */,
+				46834F9524CA0D3A00BAF1DA /* CardDeckEntity.swift */,
+				46834F9D24CA0D3B00BAF1DA /* ChallengeCardEntity.swift */,
+				46834F9A24CA0D3A00BAF1DA /* ChallengeElementEntity.swift */,
+				46834F9B24CA0D3A00BAF1DA /* ChallengeElementTypeEntity.swift */,
+				46834F9F24CA0D3B00BAF1DA /* DailyChallengeEntity.swift */,
+				46834F9624CA0D3A00BAF1DA /* KeywordEntity.swift */,
+				46834F9724CA0D3A00BAF1DA /* QuizCardEntity.swift */,
+				46834F9824CA0D3A00BAF1DA /* ReflectionQuestionEntity.swift */,
+				46834F9924CA0D3A00BAF1DA /* SelectOptionEntity.swift */,
+			);
+			path = DataTransferObjects;
+			sourceTree = "<group>";
+		};
+		46834FB324CA12C500BAF1DA /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				46834FB124CA12B200BAF1DA /* ChallengeProgramsMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		46834FBC24CA223700BAF1DA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				46834FBF24CA22E800BAF1DA /* EndPoint.swift */,
+				46834FBD24CA227300BAF1DA /* Provider.swift */,
+				46834FC224CA25AA00BAF1DA /* Mocks */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		46834FC224CA25AA00BAF1DA /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				46834FC324CA25CD00BAF1DA /* JsonProvider.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		46834FC524CA264900BAF1DA /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				46834FCA24CA268500BAF1DA /* ActivateDailyChallenge.json */,
+				46834FCB24CA268500BAF1DA /* AppDailyChallenge_0.json */,
+				46834FC724CA268500BAF1DA /* AppDailyChallenge_1.json */,
+				46834FC824CA268500BAF1DA /* AppDailyChallenge_2.json */,
+				46834FC924CA268500BAF1DA /* AppDailyChallenge_3.json */,
+				46834FC624CA268500BAF1DA /* AppSession.json */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		46834FD424CA2F6E00BAF1DA /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				46834FDB24CA31F400BAF1DA /* AdditionalInfoMapper.swift */,
+				46834FDD24CA322200BAF1DA /* AssignmentMapper.swift */,
+				46834FDF24CA325300BAF1DA /* AssignmentTypeMapper.swift */,
+				46834FD724CA316700BAF1DA /* BannerMapper.swift */,
+				46834FD924CA31B600BAF1DA /* BannerTypeMapper.swift */,
+				46834FD524CA2F8E00BAF1DA /* ChallengeMapper.swift */,
+				46834FE324CA33FC00BAF1DA /* ChallengeStatusMapper.swift */,
+				46834FE124CA32D800BAF1DA /* SelectOptionMapper.swift */,
+			);
+			path = Mapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +1840,7 @@
 				46834CAF24C9C48900BAF1DA /* Sources */,
 				46834CB024C9C48900BAF1DA /* Frameworks */,
 				46834CB124C9C48900BAF1DA /* Resources */,
+				46834F6224C9F14E00BAF1DA /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,40 +1889,357 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46834CC324C9C48A00BAF1DA /* LaunchScreen.storyboard in Resources */,
-				46834CC024C9C48A00BAF1DA /* Assets.xcassets in Resources */,
-				46834CBE24C9C48900BAF1DA /* Main.storyboard in Resources */,
+				46834F1324C9C58400BAF1DA /* CircularStd-BlackItalic.otf in Resources */,
+				46834F0F24C9C58400BAF1DA /* CircularStd-Book.otf in Resources */,
+				46834FCC24CA268500BAF1DA /* AppSession.json in Resources */,
+				46834FCD24CA268500BAF1DA /* AppDailyChallenge_1.json in Resources */,
+				46834F0E24C9C58400BAF1DA /* Assets.xcassets in Resources */,
+				46834FCE24CA268500BAF1DA /* AppDailyChallenge_2.json in Resources */,
+				46834FD124CA268500BAF1DA /* AppDailyChallenge_0.json in Resources */,
+				46834F1524C9C58400BAF1DA /* CircularStd-Medium.otf in Resources */,
+				46834F1024C9C58400BAF1DA /* CircularStd-Black.otf in Resources */,
+				46834F0D24C9C58400BAF1DA /* Localizable.strings in Resources */,
+				46834F1224C9C58400BAF1DA /* CircularStd-BookItalic.otf in Resources */,
+				46834F1124C9C58400BAF1DA /* CircularStd-Bold.otf in Resources */,
+				46834FD024CA268500BAF1DA /* ActivateDailyChallenge.json in Resources */,
+				46834EF624C9C58400BAF1DA /* LaunchScreen.storyboard in Resources */,
+				46834F1424C9C58400BAF1DA /* CircularStd-BoldItalic.otf in Resources */,
+				46834FCF24CA268500BAF1DA /* AppDailyChallenge_3.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46834F6224C9F14E00BAF1DA /* Copy Carthage Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/EasyPeasy.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftKeychainWrapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+			);
+			name = "Copy Carthage Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		46834CAF24C9C48900BAF1DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46834CBB24C9C48900BAF1DA /* ViewController.swift in Sources */,
+				46834FD624CA2F8E00BAF1DA /* ChallengeMapper.swift in Sources */,
+				46834E4F24C9C58300BAF1DA /* ChallengeStatusTransitioningDelegate.swift in Sources */,
+				46834E5124C9C58300BAF1DA /* ChallengeSelectionInteractor.swift in Sources */,
+				46834E4C24C9C58300BAF1DA /* ChallengeSelectionViewController.swift in Sources */,
+				46834F2E24C9C58400BAF1DA /* SimpleCardContentViewPresentable.swift in Sources */,
+				46834EE624C9C58400BAF1DA /* OnboardingViewController.swift in Sources */,
+				46834EAF24C9C58300BAF1DA /* ChallengeReflectionInteractor.swift in Sources */,
+				46834F4F24C9C58400BAF1DA /* InfoViewPresentable.swift in Sources */,
+				46834E7624C9C58300BAF1DA /* QuizAnswersViewPresentable.swift in Sources */,
+				46834E5524C9C58300BAF1DA /* ChallengeProgramResponse.swift in Sources */,
+				46834F0724C9C58400BAF1DA /* InteractiveCloseCardAnimatorDelegate.swift in Sources */,
+				46834EB924C9C58300BAF1DA /* ChallengesAvailableInteractor.swift in Sources */,
+				46834F8624CA0AE200BAF1DA /* Assignment.swift in Sources */,
+				46834EB324C9C58300BAF1DA /* ChallengesAvailableResponse.swift in Sources */,
+				46834EE824C9C58400BAF1DA /* OnboardingViewControllerFactory.swift in Sources */,
+				46834FDE24CA322200BAF1DA /* AssignmentMapper.swift in Sources */,
+				46834F5A24C9C93600BAF1DA /* LoginWorker.swift in Sources */,
+				46834F2324C9C58400BAF1DA /* CardOpenExpandAnimatableContext.swift in Sources */,
+				46834EBB24C9C58300BAF1DA /* ChallengesAvailableRouter.swift in Sources */,
+				46834F2124C9C58400BAF1DA /* MaskCollapseAnimatableContext.swift in Sources */,
+				46834E5424C9C58300BAF1DA /* ChallengeProgramPresenter.swift in Sources */,
+				46834F1724C9C58400BAF1DA /* ConfigurableView.swift in Sources */,
+				46834F8824CA0B0200BAF1DA /* SelectOption.swift in Sources */,
+				46834E7824C9C58300BAF1DA /* QuizTitleViewPresentable.swift in Sources */,
+				46834F3224C9C58400BAF1DA /* SimpleCardView.swift in Sources */,
+				46834E5B24C9C58300BAF1DA /* ChallengeProgramViewModel.swift in Sources */,
+				46834EDB24C9C58400BAF1DA /* LoginResponse.swift in Sources */,
+				46834F3524C9C58400BAF1DA /* VideoPreviewView.swift in Sources */,
+				46834E5924C9C58300BAF1DA /* ChallengeProgramSmallCardContentView.swift in Sources */,
+				46834F2524C9C58400BAF1DA /* ModalPresentationController.swift in Sources */,
+				46834EC524C9C58300BAF1DA /* ChallengeFinishedRequest.swift in Sources */,
+				46834F3024C9C58400BAF1DA /* CardDeckView.swift in Sources */,
+				46834E9824C9C58300BAF1DA /* ChallengeProgramsViewModel.swift in Sources */,
+				46834F3824C9C58400BAF1DA /* ChallengeInfoPresentable.swift in Sources */,
+				46834E9924C9C58300BAF1DA /* ChallengeProgramsViewControllerFactory.swift in Sources */,
+				46834E9C24C9C58300BAF1DA /* ChallengeProgramCardContentViewPresentable.swift in Sources */,
+				46834F0124C9C58400BAF1DA /* InteractiveOpenCardAnimatorDelegate.swift in Sources */,
+				46834E4B24C9C58300BAF1DA /* ChallengeSelectionResponse.swift in Sources */,
+				46834E4D24C9C58300BAF1DA /* ChallengeSelectionChildViewController.swift in Sources */,
+				46834FA124CA0D3B00BAF1DA /* CardDeckEntity.swift in Sources */,
+				46834EC024C9C58300BAF1DA /* ChallengeFinishedViewController.swift in Sources */,
+				46834E7324C9C58300BAF1DA /* LaunchRouter.swift in Sources */,
+				46834EF424C9C58400BAF1DA /* ChallengeActiveInteractor.swift in Sources */,
+				46834E6E24C9C58300BAF1DA /* LaunchPresenter.swift in Sources */,
+				46834E5824C9C58300BAF1DA /* ChallengeProgramLargeCardContentView.swift in Sources */,
+				46834F4424C9C58400BAF1DA /* ChallengeQuoteBannerViewModel.swift in Sources */,
+				46834FAB24CA0D3B00BAF1DA /* DailyChallengeEntity.swift in Sources */,
+				46834FAA24CA0D3B00BAF1DA /* ActivateDailyChallengeResponse.swift in Sources */,
+				46834EEF24C9C58400BAF1DA /* ChallengeActiveResponse.swift in Sources */,
+				46834E5C24C9C58300BAF1DA /* ChallengeProgramSmallContentView.swift in Sources */,
+				46834F2A24C9C58400BAF1DA /* CardCloseCollapseNavigationAnimator.swift in Sources */,
+				46834E5A24C9C58300BAF1DA /* ChallengeProgramViewController.swift in Sources */,
+				46834F6124C9D28C00BAF1DA /* GetDailyChallengesWorker.swift in Sources */,
+				46834E7C24C9C58300BAF1DA /* QuizQuestionViewPresentable.swift in Sources */,
+				46834F2924C9C58400BAF1DA /* CardExpandAnimatableContext.swift in Sources */,
+				46834E6924C9C58300BAF1DA /* ChallengeProgramInfoViewModel.swift in Sources */,
+				46834FA424CA0D3B00BAF1DA /* ReflectionQuestionEntity.swift in Sources */,
+				46834F0024C9C58400BAF1DA /* InteractiveOpenCardAnimator.swift in Sources */,
+				46834F4124C9C58400BAF1DA /* ChallengeQuoteBannerViewPresentable.swift in Sources */,
+				46834FB224CA12B200BAF1DA /* ChallengeProgramsMapper.swift in Sources */,
+				46834E7124C9C58300BAF1DA /* LaunchInteractor.swift in Sources */,
+				46834E8224C9C58300BAF1DA /* QuizCardContentViewPresentableItem.swift in Sources */,
+				46834ED224C9C58300BAF1DA /* ChallengeRequest.swift in Sources */,
+				46834FE224CA32D800BAF1DA /* SelectOptionMapper.swift in Sources */,
+				46834F9124CA0C1700BAF1DA /* GetChallengeProgramsWorker.swift in Sources */,
+				46834F5124C9C58400BAF1DA /* StyleGuide.swift in Sources */,
+				46834ED824C9C58400BAF1DA /* ScannerViewControllerDelegate.swift in Sources */,
+				46834E9724C9C58300BAF1DA /* ChallengeProgramCardView.swift in Sources */,
+				46834FA924CA0D3B00BAF1DA /* ChallengeCardEntity.swift in Sources */,
+				46834F0624C9C58400BAF1DA /* InteractiveCloseCardAnimator.swift in Sources */,
+				46834F8224CA0A9200BAF1DA /* BannerType.swift in Sources */,
+				46834EDD24C9C58400BAF1DA /* LoginViewModel.swift in Sources */,
+				46834EBA24C9C58300BAF1DA /* ChallengesAvailableRequest.swift in Sources */,
+				46834EF024C9C58400BAF1DA /* ChallengeActivePresenter.swift in Sources */,
+				46834F3624C9C58400BAF1DA /* ChallengeInfoViewModel.swift in Sources */,
+				46834E7724C9C58300BAF1DA /* QuizFeedbackTableViewCell.swift in Sources */,
+				46834FA224CA0D3B00BAF1DA /* KeywordEntity.swift in Sources */,
+				46834ECC24C9C58300BAF1DA /* ChallengeButtonsTableViewCellDelegate.swift in Sources */,
+				46834E9024C9C58300BAF1DA /* QuizRouter.swift in Sources */,
+				46834EE724C9C58400BAF1DA /* OnboardingInstructionCardView.swift in Sources */,
+				46834EB024C9C58300BAF1DA /* ChallengeReflectionRequest.swift in Sources */,
+				46834EA324C9C58300BAF1DA /* ChallengeReflectionPresenter.swift in Sources */,
+				46834F0524C9C58400BAF1DA /* InteractiveDrawCardAnimator.swift in Sources */,
+				46834ECA24C9C58300BAF1DA /* ChallengeResponse.swift in Sources */,
+				46834EEB24C9C58400BAF1DA /* OnboardingInteractor.swift in Sources */,
+				46834E6224C9C58300BAF1DA /* ChallengeProgramInfoPresenter.swift in Sources */,
+				46834F2C24C9C58400BAF1DA /* MaskExpandNavigationAnimator.swift in Sources */,
+				46834EA724C9C58300BAF1DA /* ChallengeReflectionMetadataTableViewCell.swift in Sources */,
+				46834F4324C9C58400BAF1DA /* ChallengeImageBannerViewPresentable.swift in Sources */,
+				46834F7B24CA07F300BAF1DA /* UITableView+Helper.swift in Sources */,
+				46834F4224C9C58400BAF1DA /* ChallengeBannerViewPresentable.swift in Sources */,
+				46834EF524C9C58400BAF1DA /* ChallengeActiveRouter.swift in Sources */,
+				46834E6B24C9C58300BAF1DA /* ChallengeProgramInfoInteractor.swift in Sources */,
+				46834F5324C9C58400BAF1DA /* StyleGuide+Layout.swift in Sources */,
+				46834FAE24CA0E8700BAF1DA /* AssignmentType.swift in Sources */,
+				46834E6824C9C58300BAF1DA /* ChallengeProgramInfoViewController.swift in Sources */,
+				46834FDA24CA31B600BAF1DA /* BannerTypeMapper.swift in Sources */,
+				46834F2B24C9C58400BAF1DA /* NavigationController.swift in Sources */,
+				46834EC424C9C58300BAF1DA /* ChallengeFinishedInteractor.swift in Sources */,
+				46834EAE24C9C58300BAF1DA /* ChallengeReflectionDelegate.swift in Sources */,
+				46834F1624C9C58400BAF1DA /* CardDisplayLogic.swift in Sources */,
+				46834F3D24C9C58400BAF1DA /* ChallengeVideoBannerView.swift in Sources */,
+				46834E9524C9C58300BAF1DA /* ChallengeProgramInfoCardView.swift in Sources */,
+				46834F2824C9C58400BAF1DA /* CardOpenExpandNavigationAnimator.swift in Sources */,
+				46834E8324C9C58300BAF1DA /* QuizCardContentViewPresentable.swift in Sources */,
+				46834F2224C9C58400BAF1DA /* MaskCollapseNavigationAnimator.swift in Sources */,
+				46834E9D24C9C58300BAF1DA /* ChallengeProgramInfoCardContentView.swift in Sources */,
+				46834E8724C9C58300BAF1DA /* QuizViewControllerFactory.swift in Sources */,
+				46834F0C24C9C58400BAF1DA /* DealingTable.swift in Sources */,
+				46834EF124C9C58400BAF1DA /* ChallengeActiveViewController.swift in Sources */,
+				46834F4C24C9C58400BAF1DA /* GHChevronButton.swift in Sources */,
+				46834EE524C9C58400BAF1DA /* OnboardingInstructionCardContentView.swift in Sources */,
+				46834EE924C9C58400BAF1DA /* OnboardingInstructionCardContentViewPresentable.swift in Sources */,
+				46834F1C24C9C58400BAF1DA /* CGFloat+Helper.swift in Sources */,
+				46834E6F24C9C58300BAF1DA /* LaunchViewController.swift in Sources */,
+				46834F4024C9C58400BAF1DA /* ChallengeImageBannerView.swift in Sources */,
+				46834FB024CA0EDC00BAF1DA /* UIStackView+Helper.swift in Sources */,
+				46834F4524C9C58400BAF1DA /* ChallengeVideoBannerViewModel.swift in Sources */,
+				46834EF824C9C58400BAF1DA /* InteractiveDiscardCardAnimatorDelegate.swift in Sources */,
+				46834EA924C9C58300BAF1DA /* ChallengeReflectionButtonsPresentable.swift in Sources */,
+				46834F3F24C9C58400BAF1DA /* ChallengeQuoteBannerView.swift in Sources */,
+				46834F4924C9C58400BAF1DA /* ChallengeFrontSideCardContentViewPresentable.swift in Sources */,
+				46834E9E24C9C58300BAF1DA /* ChallengeProgramsRequest.swift in Sources */,
+				46834F1D24C9C58400BAF1DA /* UIView+Helper.swift in Sources */,
+				46834ED124C9C58300BAF1DA /* ChallengeViewControllerFactory.swift in Sources */,
+				46834E5624C9C58300BAF1DA /* ChallengeProgramLargeContentView.swift in Sources */,
+				46834EA024C9C58300BAF1DA /* ChallengeProgramsRouter.swift in Sources */,
+				46834EF224C9C58400BAF1DA /* ChallengeActiveViewControllerFactory.swift in Sources */,
+				46834FA724CA0D3B00BAF1DA /* ChallengeElementTypeEntity.swift in Sources */,
+				46834E4A24C9C58300BAF1DA /* ChallengeSelectionPresenter.swift in Sources */,
+				46834F6C24CA002400BAF1DA /* UIColor+Helper.swift in Sources */,
+				46834F8C24CA0B6E00BAF1DA /* ReflectionAnswer.swift in Sources */,
+				46834E8924C9C58300BAF1DA /* QuizFeedbackViewPresentable.swift in Sources */,
+				46834F7E24CA0A1F00BAF1DA /* Challenge.swift in Sources */,
+				46834FB524CA1AEB00BAF1DA /* UIScrollView+Helper.swift in Sources */,
+				46834F1824C9C58400BAF1DA /* ChallengeBannerViewPresentableMapper.swift in Sources */,
+				46834EFB24C9C58400BAF1DA /* CardStacker.swift in Sources */,
+				46834EFC24C9C58400BAF1DA /* CardStackable.swift in Sources */,
+				46834F1F24C9C58400BAF1DA /* String+Helper.swift in Sources */,
+				46834E5F24C9C58300BAF1DA /* ChallengeProgramRequest.swift in Sources */,
+				46834E8D24C9C58300BAF1DA /* QuizFeedbackContentViewPresentable.swift in Sources */,
+				46834EB624C9C58300BAF1DA /* ChallengeCardContentViewModel.swift in Sources */,
+				46834E9B24C9C58300BAF1DA /* ChallengeProgramsViewController.swift in Sources */,
+				46834EFA24C9C58400BAF1DA /* InteractiveDiscardCardAnimator.swift in Sources */,
+				46834F4E24C9C58400BAF1DA /* InfoViewModel.swift in Sources */,
+				46834E6724C9C58300BAF1DA /* ChallengeProgramInfoViewPresentable.swift in Sources */,
+				46834E5D24C9C58300BAF1DA /* ChallengeProgramViewControllerFactory.swift in Sources */,
+				46834EAB24C9C58300BAF1DA /* ChallengeReflectionViewController.swift in Sources */,
+				46834E7F24C9C58300BAF1DA /* QuizQuestionTableViewCell.swift in Sources */,
+				46834E5E24C9C58300BAF1DA /* ChallengeProgramInteractor.swift in Sources */,
+				46834E8024C9C58300BAF1DA /* QuizSubmitView.swift in Sources */,
+				46834F0A24C9C58400BAF1DA /* InteractiveReturnCardAnimator.swift in Sources */,
+				46834F3324C9C58400BAF1DA /* CardContentView.swift in Sources */,
+				46834F3B24C9C58400BAF1DA /* GHDiscreteSlider.swift in Sources */,
+				46834F5E24C9CA5B00BAF1DA /* CheckOnboardingShownWorker.swift in Sources */,
+				46834F0424C9C58400BAF1DA /* RetractCardsAnimator.swift in Sources */,
+				46834FC024CA22E800BAF1DA /* EndPoint.swift in Sources */,
+				46834EEA24C9C58400BAF1DA /* OnboardingViewModel.swift in Sources */,
+				46834EDC24C9C58400BAF1DA /* LoginPresenter.swift in Sources */,
+				46834EDE24C9C58400BAF1DA /* LoginViewController.swift in Sources */,
+				46834E6624C9C58300BAF1DA /* ChallengeProgramInfoViewControllerFactory.swift in Sources */,
+				46834FD324CA2E7100BAF1DA /* GetChallengesWorker.swift in Sources */,
+				46834F1E24C9C58400BAF1DA /* UIViewControllerContextTransitioning+Helper.swift in Sources */,
+				46834F3124C9C58400BAF1DA /* Card.swift in Sources */,
+				46834FA624CA0D3B00BAF1DA /* ChallengeElementEntity.swift in Sources */,
+				46834E7E24C9C58300BAF1DA /* QuizExplanationTableViewCell.swift in Sources */,
+				46834E8824C9C58300BAF1DA /* QuizMoreInfoTableViewCell.swift in Sources */,
+				46834ED624C9C58400BAF1DA /* ScannerViewControllerFactory.swift in Sources */,
+				46834E6C24C9C58300BAF1DA /* ChallengeProgramInfoRouter.swift in Sources */,
+				46834EA424C9C58300BAF1DA /* ChallengeReflectionButtonsTableViewCell.swift in Sources */,
+				46834F3E24C9C58400BAF1DA /* ChallengeImageBannerViewModel.swift in Sources */,
+				46834EC124C9C58300BAF1DA /* ConfettiDecorator.swift in Sources */,
+				46834EA624C9C58300BAF1DA /* ChallengeReflectionViewModel.swift in Sources */,
+				46834EC924C9C58300BAF1DA /* ChallengePresenter.swift in Sources */,
+				46834E4E24C9C58300BAF1DA /* ChallengeSelectionViewControllerFactory.swift in Sources */,
+				46834EB424C9C58300BAF1DA /* ChallengesAvailablePresenter.swift in Sources */,
+				46834ED724C9C58400BAF1DA /* ScannerError.swift in Sources */,
+				46834E8F24C9C58300BAF1DA /* QuizInteractor.swift in Sources */,
+				46834FAC24CA0D3B00BAF1DA /* ActivateDailyChallengePayload.swift in Sources */,
+				46834EBF24C9C58300BAF1DA /* ChallengeFinishedPresenter.swift in Sources */,
+				46834F3924C9C58400BAF1DA /* GHButton.swift in Sources */,
+				46834ED924C9C58400BAF1DA /* ScannerViewController.swift in Sources */,
+				46834F4A24C9C58400BAF1DA /* ChallengeBackSideCardContentView.swift in Sources */,
+				46834E8B24C9C58300BAF1DA /* QuizAnswersTableViewCell.swift in Sources */,
+				46834EBE24C9C58300BAF1DA /* ChallengeFinishedResponse.swift in Sources */,
+				46834F7424CA05B200BAF1DA /* SetOnboardingShownWorker.swift in Sources */,
+				46834F0B24C9C58400BAF1DA /* CardDealable.swift in Sources */,
+				46834EAC24C9C58300BAF1DA /* ChallengeReflectionViewControllerFactory.swift in Sources */,
+				46834E8524C9C58300BAF1DA /* QuizCardView.swift in Sources */,
+				46834F5C24C9C9C700BAF1DA /* FirstRunWorker.swift in Sources */,
+				46834EBD24C9C58300BAF1DA /* ChallengeFinishedViewModelMapper.swift in Sources */,
+				46834FE424CA33FC00BAF1DA /* ChallengeStatusMapper.swift in Sources */,
+				46834EF924C9C58400BAF1DA /* CardStackerDelegate.swift in Sources */,
+				46834E9A24C9C58300BAF1DA /* ChallengeProgramCardContentView.swift in Sources */,
+				46834EFE24C9C58400BAF1DA /* InteractiveDrawCardAnimatorDelegate.swift in Sources */,
+				46834E6324C9C58300BAF1DA /* ChallengeProgramInfoViewModelMapper.swift in Sources */,
+				46834E9224C9C58300BAF1DA /* ChallengeProgramsResponse.swift in Sources */,
+				46834E9624C9C58300BAF1DA /* ScrollViewPaginationHighlightCoordinator.swift in Sources */,
+				46834F1A24C9C58400BAF1DA /* ChallengeInfoPresentableMapper.swift in Sources */,
+				46834E7224C9C58300BAF1DA /* LaunchRequest.swift in Sources */,
+				46834EE424C9C58400BAF1DA /* OnboardingPresenter.swift in Sources */,
+				46834F2424C9C58400BAF1DA /* CardExpandNavigationAnimator.swift in Sources */,
+				46834F0824C9C58400BAF1DA /* InteractiveReturnCardAnimatorDelegate.swift in Sources */,
+				46834F6A24C9F43100BAF1DA /* ActivateDailyChallengeWorker.swift in Sources */,
+				46834F4724C9C58400BAF1DA /* ChallengeBackSideCardContentViewPresentable.swift in Sources */,
+				46834EC824C9C58300BAF1DA /* ChallengeDetailsViewModelMapper.swift in Sources */,
+				46834E8C24C9C58300BAF1DA /* QuizCardContentView.swift in Sources */,
+				46834E5024C9C58300BAF1DA /* ChallengeSelectionRequest.swift in Sources */,
+				46834E9F24C9C58300BAF1DA /* ChallengeProgramsInteractor.swift in Sources */,
+				46834EC324C9C58300BAF1DA /* ChallengeFinishedViewControllerFactory.swift in Sources */,
+				46834E6024C9C58300BAF1DA /* ChallengeProgramRouter.swift in Sources */,
+				46834F4624C9C58400BAF1DA /* ChallengeFrontSideCardView.swift in Sources */,
+				46834F8024CA0A6400BAF1DA /* Banner.swift in Sources */,
+				46834F5424C9C58400BAF1DA /* StyleGuide+Colors.swift in Sources */,
+				46834E8E24C9C58300BAF1DA /* QuizRequest.swift in Sources */,
+				46834EAA24C9C58300BAF1DA /* ChallengeReflectionQuestionPresentable.swift in Sources */,
+				46834F8E24CA0BAA00BAF1DA /* Array+Helper.swift in Sources */,
+				46834F0924C9C58400BAF1DA /* CardDealer.swift in Sources */,
+				46834EB824C9C58300BAF1DA /* ChallengesAvailableViewControllerFactory.swift in Sources */,
+				46834E9424C9C58300BAF1DA /* ChallengeProgramsPresenter.swift in Sources */,
+				46834F4824C9C58400BAF1DA /* ChallengeBackSideCardView.swift in Sources */,
+				46834E7D24C9C58300BAF1DA /* QuizViewController.swift in Sources */,
+				46834F0324C9C58400BAF1DA /* DealingContext.swift in Sources */,
+				46834F0224C9C58400BAF1DA /* CardDealerDelegate.swift in Sources */,
+				46834F4D24C9C58400BAF1DA /* InfoView.swift in Sources */,
+				46834ED424C9C58400BAF1DA /* ChallengeRouter.swift in Sources */,
+				46834FA524CA0D3B00BAF1DA /* SelectOptionEntity.swift in Sources */,
+				46834EB724C9C58300BAF1DA /* ChallengesAvailableViewController.swift in Sources */,
+				46834EA824C9C58300BAF1DA /* ChallengeReflectionMetadataPresentable.swift in Sources */,
+				46834EFD24C9C58400BAF1DA /* PresentCardsAnimator.swift in Sources */,
+				46834EE024C9C58400BAF1DA /* LoginRequest.swift in Sources */,
+				46834F2024C9C58400BAF1DA /* CardCloseCollapseAnimatableContext.swift in Sources */,
+				46834F2624C9C58400BAF1DA /* MaskExpandAnimatableContext.swift in Sources */,
+				46834ED024C9C58300BAF1DA /* ChallengeViewController.swift in Sources */,
+				46834ECE24C9C58300BAF1DA /* ChallengeButtonsTableViewCell.swift in Sources */,
+				46834EFF24C9C58400BAF1DA /* CardSpreader.swift in Sources */,
+				46834E6424C9C58300BAF1DA /* ChallengeProgramInfoResponse.swift in Sources */,
+				46834E6A24C9C58300BAF1DA /* ChallengeProgramInfoRequest.swift in Sources */,
+				46834ECB24C9C58300BAF1DA /* ChallengeBannerTableViewCell.swift in Sources */,
+				46834F2724C9C58400BAF1DA /* CardCollapseAnimatableContext.swift in Sources */,
+				46834EF324C9C58400BAF1DA /* ChallengeActiveRequest.swift in Sources */,
+				46834EC624C9C58300BAF1DA /* ChallengeFinishedRouter.swift in Sources */,
+				46834F2D24C9C58400BAF1DA /* CardCollapseNavigationAnimator.swift in Sources */,
+				46834E8124C9C58300BAF1DA /* QuizTitleTableViewCell.swift in Sources */,
+				46834EDF24C9C58400BAF1DA /* LoginViewControllerFactory.swift in Sources */,
+				46834ECF24C9C58300BAF1DA /* ChallengeInfoTableViewCell.swift in Sources */,
+				46834EE224C9C58400BAF1DA /* LoginRouter.swift in Sources */,
+				46834FDC24CA31F400BAF1DA /* AdditionalInfoMapper.swift in Sources */,
+				46834F3424C9C58400BAF1DA /* SimpleCardContentView.swift in Sources */,
+				46834E9324C9C58300BAF1DA /* ChallengeProgramsViewModelMapper.swift in Sources */,
+				46834F3724C9C58400BAF1DA /* ChallengeInfoView.swift in Sources */,
+				46834FD824CA316700BAF1DA /* BannerMapper.swift in Sources */,
+				46834FA324CA0D3B00BAF1DA /* QuizCardEntity.swift in Sources */,
+				46834F8A24CA0B3700BAF1DA /* ChallengeProgram.swift in Sources */,
+				46834E7B24C9C58300BAF1DA /* QuizFeedbackCardView.swift in Sources */,
+				46834EA524C9C58300BAF1DA /* ChallengeReflectionQuestionTableViewCell.swift in Sources */,
+				46834E6524C9C58300BAF1DA /* ChallengeProgramInfoView.swift in Sources */,
+				46834EA224C9C58300BAF1DA /* ChallengeReflectionResponse.swift in Sources */,
+				46834E7024C9C58300BAF1DA /* LaunchViewControllerFactory.swift in Sources */,
+				46834F1B24C9C58400BAF1DA /* ChallengeCardContentViewModelMapper.swift in Sources */,
 				46834CB724C9C48900BAF1DA /* AppDelegate.swift in Sources */,
-				46834CB924C9C48900BAF1DA /* SceneDelegate.swift in Sources */,
+				46834F5224C9C58400BAF1DA /* StyleGuide+Fonts.swift in Sources */,
+				46834EE124C9C58400BAF1DA /* LoginInteractor.swift in Sources */,
+				46834F3A24C9C58400BAF1DA /* ScrollView.swift in Sources */,
+				46834EEC24C9C58400BAF1DA /* OnboardingRequest.swift in Sources */,
+				46834EB124C9C58300BAF1DA /* ChallengeReflectionRouter.swift in Sources */,
+				46834F2F24C9C58400BAF1DA /* CardView.swift in Sources */,
+				46834E5224C9C58300BAF1DA /* ChallengeSelectionRouter.swift in Sources */,
+				46834FA824CA0D3B00BAF1DA /* AppSessionResponse.swift in Sources */,
+				46834EAD24C9C58300BAF1DA /* ChallengeReflectionButtonsTableViewDelegate.swift in Sources */,
+				46834ED324C9C58400BAF1DA /* ChallengeInteractor.swift in Sources */,
+				46834F7124CA050900BAF1DA /* SubmitReflectionAnswersWorker.swift in Sources */,
+				46834FE024CA325300BAF1DA /* AssignmentTypeMapper.swift in Sources */,
+				46834EC224C9C58300BAF1DA /* ChallengeFinishedViewModel.swift in Sources */,
+				46834EED24C9C58400BAF1DA /* OnboardingRouter.swift in Sources */,
+				46834FC424CA25CD00BAF1DA /* JsonProvider.swift in Sources */,
+				46834E8A24C9C58300BAF1DA /* QuizAnswersViewPresentableItem.swift in Sources */,
+				46834F8424CA0ABC00BAF1DA /* AdditionalInfo.swift in Sources */,
+				46834F7824CA078100BAF1DA /* SubmitChallengeAnswersWorker.swift in Sources */,
+				46834FBE24CA227300BAF1DA /* Provider.swift in Sources */,
+				46834E8424C9C58300BAF1DA /* QuizExplanationViewPresentable.swift in Sources */,
+				46834E8624C9C58300BAF1DA /* QuizFeedbackContentViewPresentableItem.swift in Sources */,
+				46834F4B24C9C58400BAF1DA /* ChallengeFrontSideCardContentView.swift in Sources */,
+				46834EB524C9C58300BAF1DA /* SemiTransparentLoadingIndicatorView.swift in Sources */,
+				46834E7A24C9C58300BAF1DA /* QuizFeedbackCardContentView.swift in Sources */,
+				46834E5724C9C58300BAF1DA /* ChallengeProgramContentViewPresentable.swift in Sources */,
+				46834F3C24C9C58400BAF1DA /* ChallengeVideoBannerViewPresentable.swift in Sources */,
+				46834E7524C9C58300BAF1DA /* QuizPresenter.swift in Sources */,
+				46834F9324CA0C5E00BAF1DA /* AppSessionWorker.swift in Sources */,
+				46834E7924C9C58300BAF1DA /* QuizViewModel.swift in Sources */,
+				46834ECD24C9C58300BAF1DA /* ChallengeDetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		46834CBC24C9C48900BAF1DA /* Main.storyboard */ = {
+		46834DCF24C9C58300BAF1DA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				46834CBD24C9C48900BAF1DA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		46834CC124C9C48A00BAF1DA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				46834CC224C9C48A00BAF1DA /* Base */,
+				46834DD024C9C58300BAF1DA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -286,6 +2367,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N2JNQ4GB55;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Action/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -294,7 +2379,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nl.mpsam.test.action.Action;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,6 +2389,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N2JNQ4GB55;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Action/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -312,7 +2401,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nl.mpsam.test.action.Action;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

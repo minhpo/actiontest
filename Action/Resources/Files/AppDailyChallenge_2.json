@@ -1,0 +1,90 @@
+{
+    "id": 56,
+    "name": "Day 1",
+    "cardDeckId": 2,
+    "challengeCardList": [
+        {
+            "id": "ZO0q5D9MuZrj7UCy_2",
+            "challengeCardColor": "#FA0ECC",
+            "estimatedDuration": 2,
+            "participantCount": 1,
+            "xp": 5,
+            "challengeFrontTitle": "Get up!",
+            "challengeFrontDescription": "Beweging is goed voor je hersenen. Kom in actie!",
+            "challengeBackTitle": "Blijven bewegen",
+            "challengeBackDescription": "Sta nu op en loop een rondje. Het maakt niet uit wat je gaat doen. Loop je naar een collega in plaats van te mailen? Ga je naar buiten? Als je maar beweegt!",
+            "challengeBackMediaType": "image",
+            "challengeBackMediaValue": "https://acceptatie.goodhabitz.com/content_media/banner_GS_03-0kjwh-v56vj.png",
+            "challengeElementList": [
+                {
+                    "challengeElementType": "checkbox",
+                    "label": "ik heb gelopen",
+                    "className": "checkbox class 1",
+                    "value": "",
+                    "optionList": []
+                },
+                {
+                    "challengeElementType": "checkbox",
+                    "label": "ik heb gefietst",
+                    "className": "checkbox class 1",
+                    "value": "",
+                    "optionList": []
+                },
+                {
+                    "challengeElementType": "checkbox",
+                    "label": "ik ben met de trap gegeaan in plaats van met de lift",
+                    "className": "checkbox class 1",
+                    "value": "",
+                    "optionList": []
+                }
+            ]
+        },
+        {
+            "id": "6QVpE9cF4t6Wh6u8_2",
+            "challengeCardColor": "#2DD8FE",
+            "estimatedDuration": 10,
+            "participantCount": 1,
+            "xp": 10,
+            "challengeFrontTitle": "Dorst?",
+            "challengeFrontDescription": "Beweging zit in de kleine dingen. Benodigdheden: een flesje water.",
+            "challengeBackTitle": "Blijven bewegen",
+            "challengeBackDescription": "Hoe pak je regelmatig bewegen aan? Koppel beweging aan andere routines in je leven.\nNeem een flesje water mee. Elke keer als je flesje leeg is, vul je hem opnieuw bij. Zo heb je twee vliegen in een klap: zowel goed drinken als beweging is goed voor je brein.",
+            "challengeBackMediaType": "image",
+            "challengeBackMediaValue": "https://acceptatie.goodhabitz.com/content_media/banner_GS_03-0kjwh-xtznr.png",
+            "challengeElementList": [
+                {
+                    "challengeElementType": "textfield",
+                    "label": "Hoe vaak ben je opgestaan vandaag?",
+                    "className": "input class 1",
+                    "value": "1",
+                    "optionList": []
+                }
+            ]
+        },
+        {
+            "id": "9uufhO0gZIe55DEI_2",
+            "challengeCardColor": "#2DD8FE",
+            "estimatedDuration": 5,
+            "participantCount": 1,
+            "xp": 10,
+            "challengeFrontTitle": "Omhoog en omlaag",
+            "challengeFrontDescription": "[Pending review] Benodigdheden: geen roltrap.",
+            "challengeBackTitle": "Blijven bewegen",
+            "challengeBackDescription": "[Pending review] Neem vandaag zo vaak mogelijk de trap. Vermijd de lift en de roltrap. ",
+            "challengeBackMediaType": "image",
+            "challengeBackMediaValue": "https://acceptatie.goodhabitz.com/content_media/banner_GS_03-0kjwh-g7jp1.png",
+            "challengeElementList": [
+                {
+                    "challengeElementType": "textfield",
+                    "label": "Hoeveel roltrappen en liften ben je tegengekomen?",
+                    "className": "input class 1",
+                    "value": "1",
+                    "optionList": []
+                }
+            ]
+        }
+    ],
+    "displayOrder": 1,
+    "selectedCardId": "9uufhO0gZIe55DEI_2",
+    "status": "pendingreview"
+}
